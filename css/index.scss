@@ -609,8 +609,8 @@ header {
 
 section {
     width: 98.2%;
-    ;
-    height: 2867px;
+    height: auto;
+    background: #f9f9f9;
     >div {
         height: 700px;
         width: 1200px;
@@ -664,34 +664,33 @@ section {
             }
         }
     }
-    .one-cont{
+    .one-cont {
         border-top: solid 2px #c94b56;
-        .one-ban{
+        .one-ban {
             width: 210px;
-            height: 485px;
+            height: auto;
             float: left;
-             position: relative;
-             overflow: hidden;
-             >div{
+            position: relative;
+            overflow: hidden;
+            >div {
                 width: 210px;
                 height: 485px;
-             }
-            a{
+            }
+            a {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 210px;
                 height: 485px;
             }
-            
         }
-        .one-p{
+        .one-p {
             width: 210px;
             position: absolute;
             bottom: 10px;
             display: flex;
             justify-content: center;
-            span{
+            span {
                 display: block;
                 width: 13px;
                 height: 13px;
@@ -699,20 +698,242 @@ section {
                 background: #fff;
                 border-radius: 50%;
                 float: left;
+                cursor: pointer;
             }
-            .one-span{
+            .one-span {
                 background: orangered;
             }
         }
-        .one-list{
+        .one-list {
             width: 990px;
             float: left;
-            li{
-                width: 196px;
+            li {
+                width: 197px;
                 height: 242px;
                 border: solid 1px #cecece;
                 float: left;
-                border-top: #CC0001;
+                border-top: 0;
+                border-left: 0;
+            }
+        }
+        .one-left {
+            width: 188px;
+            height: 141px;
+            padding: 10px;
+            float: left;
+            border: solid 1px #cecece;
+            h5 {
+                font-weight: bold;
+                color: #CC0001;
+                line-height: 30px;
+            }
+            a {
+                overflow: hidden;
+                font-size: 12px;
+                margin: 5px;
+                &:hover {
+                    text-decoration: underline;
+                    color: #CC0001;
+                }
+            }
+        }
+        .one-right {
+            width: 987px;
+            height: 161px;
+            float: left;
+            border: solid 1px #cecece;
+            .one-right-t {
+                height: 32px;
+                width: 967px;
+                padding: 0 10px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+                h6 {
+                    font-weight: bold;
+                    font-size: 12px;
+                    color: #d43d4e;
+                    i {
+                        display: inline-block;
+                        width: 11px;
+                        height: 13px;
+                        background: url(../img/grther.png) no-repeat -38px 0;
+                    }
+                }
+                p {
+                    span {
+                        float: left;
+                        padding: 0 15px;
+                        color: #666666;
+                        cursor: pointer;
+                        border-right: solid 1px #ccc;
+                    }
+                }
+            }
+            >ul {
+                width: 987px;
+                height: 129px;
+            }
+        }
+    }
+    .two-cont {
+        border-top: solid 2px #c37632;
+    }
+    .three,
+    .four,
+    .five {
+        height: 540px;
+    }
+    .three-cont {
+        border-top: solid 2px #276594;
+        height: 485px;
+    }
+    .four-cont {
+        border-top: solid 2px #6c9d0e;
+        height: 485px;
+    }
+    .five-cont {
+        border-top: solid 2px #fe7a65;
+        height: 485px;
+    }
+    .three-ban {
+        width: 210px;
+        height: auto;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        >div {
+            width: 210px;
+            height: 320px;
+        }
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 210px;
+            height: 320px;
+        }
+    }
+    .three-left {
+        width: 188px;
+        height: 144px;
+        padding: 10px;
+        float: left;
+        border: solid 1px #cecece;
+        h5 {
+            font-weight: bold;
+            color: #CC0001;
+            line-height: 30px;
+        }
+        a {
+            overflow: hidden;
+            font-size: 12px;
+            margin: 5px;
+            &:hover {
+                text-decoration: underline;
+                color: #CC0001;
+            }
+        }
+    }
+    .three-list {
+        width: 990px;
+        float: right;
+        li {
+            width: 197px;
+            height: 242px;
+            border: solid 1px #cecece;
+            float: left;
+            border-top: 0;
+            border-left: 0;
+        }
+    }
+    .four-ban {
+        width: 210px;
+        height: auto;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        >div {
+            width: 210px;
+            height: 485px;
+        }
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 210px;
+            height: 485px;
+        }
+    }
+    .sec-btn {
+        height: 358px;
+        >ul {
+            width: 100%;
+            height: 42px;
+            li {
+                float: left;
+                padding: 10px 14px;
+                cursor: pointer;
+            }
+        }
+        >div {
+            width: 1198px;
+            height: 304px;
+            border: solid 1px #cecece;
+        }
+    }
+    >figure {
+        height: 190px;
+        width: 1200px;
+        margin: 0 auto;
+        figcaption {
+            border-left: solid 7px #ff9000;
+            text-indent: 5px;
+            margin: 10px 0;
+        }
+        .fig-warp {
+            width: 1198px;
+            height: 132px;
+            border: solid 1px #cecece;
+            >div {
+                width: 585px;
+                height: 60px;
+                float: left;
+                margin: 2px;
+                >h3 {
+                    width: 107px;
+                    height: 60px;
+                    float: left;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #f7f7f7;
+                    span {
+                        width: 28px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #5d6371;
+                    }
+                    i {
+                        display: block;
+                        width: 17px;
+                        height: 38px;
+                        margin: 0 5px;
+                        background: url(../img/grther.png) no-repeat -64px 0;
+                    }
+                }
+                >p {
+                    float: left;
+                    width: 450px;
+                    margin: 5px 0;
+                    a {
+                        float: left;
+                        color: #666;
+                        font-size: 12px;
+                        padding: 0 10px;
+                        border-right: solid 1px #afafaf;
+                    }
+                }
             }
         }
     }
@@ -726,6 +947,18 @@ footer {
         height: 84px;
         width: 1200px;
         margin: 0 auto;
+        border-bottom: solid 1px #494949;
+        p {
+            i {
+                width: 40px;
+                height: 40px;
+                background: url(../img/grther1.png) no-repeat -144px -22px;
+            }
+            b{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
     }
     .footer-bom {
         height: 205px;

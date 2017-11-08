@@ -495,7 +495,8 @@ header {
 
 section {
   width: 98.2%;
-  height: 2867px; }
+  height: auto;
+  background: #f9f9f9; }
   section > div {
     height: 700px;
     width: 1200px;
@@ -542,7 +543,7 @@ section {
     border-top: solid 2px #c94b56; }
     section .one-cont .one-ban {
       width: 210px;
-      height: 485px;
+      height: auto;
       float: left;
       position: relative;
       overflow: hidden; }
@@ -568,18 +569,198 @@ section {
         margin: 0 5px;
         background: #fff;
         border-radius: 50%;
-        float: left; }
+        float: left;
+        cursor: pointer; }
       section .one-cont .one-p .one-span {
         background: orangered; }
     section .one-cont .one-list {
       width: 990px;
       float: left; }
       section .one-cont .one-list li {
-        width: 196px;
+        width: 197px;
         height: 242px;
         border: solid 1px #cecece;
         float: left;
-        border-top: #CC0001; }
+        border-top: 0;
+        border-left: 0; }
+    section .one-cont .one-left {
+      width: 188px;
+      height: 141px;
+      padding: 10px;
+      float: left;
+      border: solid 1px #cecece; }
+      section .one-cont .one-left h5 {
+        font-weight: bold;
+        color: #CC0001;
+        line-height: 30px; }
+      section .one-cont .one-left a {
+        overflow: hidden;
+        font-size: 12px;
+        margin: 5px; }
+        section .one-cont .one-left a:hover {
+          text-decoration: underline;
+          color: #CC0001; }
+    section .one-cont .one-right {
+      width: 987px;
+      height: 161px;
+      float: left;
+      border: solid 1px #cecece; }
+      section .one-cont .one-right .one-right-t {
+        height: 32px;
+        width: 967px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px; }
+        section .one-cont .one-right .one-right-t h6 {
+          font-weight: bold;
+          font-size: 12px;
+          color: #d43d4e; }
+          section .one-cont .one-right .one-right-t h6 i {
+            display: inline-block;
+            width: 11px;
+            height: 13px;
+            background: url(../img/grther.png) no-repeat -38px 0; }
+        section .one-cont .one-right .one-right-t p span {
+          float: left;
+          padding: 0 15px;
+          color: #666666;
+          cursor: pointer;
+          border-right: solid 1px #ccc; }
+      section .one-cont .one-right > ul {
+        width: 987px;
+        height: 129px; }
+  section .two-cont {
+    border-top: solid 2px #c37632; }
+  section .three,
+  section .four,
+  section .five {
+    height: 540px; }
+  section .three-cont {
+    border-top: solid 2px #276594;
+    height: 485px; }
+  section .four-cont {
+    border-top: solid 2px #6c9d0e;
+    height: 485px; }
+  section .five-cont {
+    border-top: solid 2px #fe7a65;
+    height: 485px; }
+  section .three-ban {
+    width: 210px;
+    height: auto;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section .three-ban > div {
+      width: 210px;
+      height: 320px; }
+    section .three-ban a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 210px;
+      height: 320px; }
+  section .three-left {
+    width: 188px;
+    height: 144px;
+    padding: 10px;
+    float: left;
+    border: solid 1px #cecece; }
+    section .three-left h5 {
+      font-weight: bold;
+      color: #CC0001;
+      line-height: 30px; }
+    section .three-left a {
+      overflow: hidden;
+      font-size: 12px;
+      margin: 5px; }
+      section .three-left a:hover {
+        text-decoration: underline;
+        color: #CC0001; }
+  section .three-list {
+    width: 990px;
+    float: right; }
+    section .three-list li {
+      width: 197px;
+      height: 242px;
+      border: solid 1px #cecece;
+      float: left;
+      border-top: 0;
+      border-left: 0; }
+  section .four-ban {
+    width: 210px;
+    height: auto;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section .four-ban > div {
+      width: 210px;
+      height: 485px; }
+    section .four-ban a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 210px;
+      height: 485px; }
+  section .sec-btn {
+    height: 358px; }
+    section .sec-btn > ul {
+      width: 100%;
+      height: 42px; }
+      section .sec-btn > ul li {
+        float: left;
+        padding: 10px 14px;
+        cursor: pointer; }
+    section .sec-btn > div {
+      width: 1198px;
+      height: 304px;
+      border: solid 1px #cecece; }
+  section > figure {
+    height: 190px;
+    width: 1200px;
+    margin: 0 auto; }
+    section > figure figcaption {
+      border-left: solid 7px #ff9000;
+      text-indent: 5px;
+      margin: 10px 0; }
+    section > figure .fig-warp {
+      width: 1198px;
+      height: 132px;
+      border: solid 1px #cecece; }
+      section > figure .fig-warp > div {
+        width: 585px;
+        height: 60px;
+        float: left;
+        margin: 2px; }
+        section > figure .fig-warp > div > h3 {
+          width: 107px;
+          height: 60px;
+          float: left;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f7f7f7; }
+          section > figure .fig-warp > div > h3 span {
+            width: 28px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #5d6371; }
+          section > figure .fig-warp > div > h3 i {
+            display: block;
+            width: 17px;
+            height: 38px;
+            margin: 0 5px;
+            background: url(../img/grther.png) no-repeat -64px 0; }
+        section > figure .fig-warp > div > p {
+          float: left;
+          width: 450px;
+          margin: 5px 0; }
+          section > figure .fig-warp > div > p a {
+            float: left;
+            color: #666;
+            font-size: 12px;
+            padding: 0 10px;
+            border-right: solid 1px #afafaf; }
 
 footer {
   height: 289px;
@@ -588,7 +769,15 @@ footer {
   footer .footer-top {
     height: 84px;
     width: 1200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-bottom: solid 1px #494949; }
+    footer .footer-top p i {
+      width: 40px;
+      height: 40px;
+      background: url(../img/grther1.png) no-repeat -144px -22px; }
+    footer .footer-top p b {
+      font-size: 20px;
+      font-weight: bold; }
   footer .footer-bom {
     height: 205px;
     width: 1200px;
