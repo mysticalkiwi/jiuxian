@@ -311,7 +311,7 @@ header {
 
 #lisibox {
   width: 98.2%;
-  height: 959px;
+  height: auto;
   position: relative;
   overflow: hidden; }
   #lisibox .bgleft a {
@@ -442,13 +442,144 @@ header {
           cursor: pointer; }
         #lisibox .content-warp .smlban1 p .sml-span {
           background: cornflowerblue; }
+    #lisibox .content-warp .shuang11 {
+      width: 100%;
+      height: 110px;
+      float: left;
+      background: url(../img/shuang11huodong.jpg); }
+      #lisibox .content-warp .shuang11 a {
+        float: left;
+        height: 110px;
+        width: 393px;
+        background: #edecf4; }
+    #lisibox .content-warp > figure {
+      float: left;
+      width: 100%; }
+      #lisibox .content-warp > figure figcaption {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between; }
+        #lisibox .content-warp > figure figcaption h3 {
+          height: 40px;
+          line-height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #lisibox .content-warp > figure figcaption h3 i {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            background: url(../img/grther.png) no-repeat left top; }
+          #lisibox .content-warp > figure figcaption h3 span {
+            margin-left: 10px; }
+        #lisibox .content-warp > figure figcaption p {
+          display: flex;
+          align-items: center; }
+          #lisibox .content-warp > figure figcaption p span {
+            float: left;
+            width: 9px;
+            height: 9px;
+            background: #ccc;
+            margin: 0 10px; }
+          #lisibox .content-warp > figure figcaption p .shuang11-span {
+            background: #cc0000; }
+      #lisibox .content-warp > figure > ul {
+        height: 257px;
+        width: 1200px;
+        border: solid 1px #ECECEC;
+        overflow: hidden; }
 
 section {
-  width: 1200px;
-  height: 2867px;
-  margin: 0 auto; }
+  width: 98.2%;
+  height: 2867px; }
   section > div {
-    height: 700px; }
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto; }
+  section .cap {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px; }
+    section .cap h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section .cap h3 i {
+        display: block;
+        width: 28px;
+        height: 29px;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: center;
+        color: #fff;
+        margin-right: 10px; }
+      section .cap h3 span {
+        font-size: 18px; }
+    section .cap p > a {
+      color: #999999;
+      padding: 0 12px;
+      border-right: solid 1px #999; }
+      section .cap p > a:hover {
+        color: #CC0001;
+        text-decoration: underline; }
+    section .cap p i {
+      display: block;
+      float: right;
+      padding: 0 5px;
+      background: #d43d4e;
+      border-radius: 2px;
+      margin-right: 10px; }
+      section .cap p i a {
+        color: #fff; }
+  section .one-cont {
+    border-top: solid 2px #c94b56; }
+    section .one-cont .one-ban {
+      width: 210px;
+      height: 485px;
+      float: left;
+      position: relative;
+      overflow: hidden; }
+      section .one-cont .one-ban > div {
+        width: 210px;
+        height: 485px; }
+      section .one-cont .one-ban a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 210px;
+        height: 485px; }
+    section .one-cont .one-p {
+      width: 210px;
+      position: absolute;
+      bottom: 10px;
+      display: flex;
+      justify-content: center; }
+      section .one-cont .one-p span {
+        display: block;
+        width: 13px;
+        height: 13px;
+        margin: 0 5px;
+        background: #fff;
+        border-radius: 50%;
+        float: left; }
+      section .one-cont .one-p .one-span {
+        background: orangered; }
+    section .one-cont .one-list {
+      width: 990px;
+      float: left; }
+      section .one-cont .one-list li {
+        width: 196px;
+        height: 242px;
+        border: solid 1px #cecece;
+        float: left;
+        border-top: #CC0001; }
 
 footer {
   height: 289px;
