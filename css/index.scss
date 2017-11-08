@@ -948,16 +948,61 @@ footer {
         width: 1200px;
         margin: 0 auto;
         border-bottom: solid 1px #494949;
-        p {
+        >p {
+            float: left;
+            width: 450px;
+            height: 84px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             i {
+                display: block;
                 width: 40px;
                 height: 40px;
                 background: url(../img/grther1.png) no-repeat -144px -22px;
             }
             b{
-                font-size: 20px;
+                font-size: 25px;
                 font-weight: bold;
+                color: #cc0000;
             }
+            span{
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+        >div{
+            float: right;
+            position: relative;
+            height: 84px;
+            width: 340px;
+            text-align: right;
+            line-height: 84px;
+            span{
+                font-size: 12px;
+                color: #fff;
+            }
+            #eml{
+                width: 240px;
+                height: 30px;
+                border: solid 1px #5b5b5b;
+                background: #333333;
+                text-indent: 3px;
+                font-size: 12px;
+            }
+            #emlbtn{
+                position: absolute;
+                width: 21px;
+                height: 17px;
+                right: 8px;
+                height: 30px;
+                border: 0;
+                top: 50%;
+                margin-top: -12px;
+                background: #333333 url(../img/grther1.png) no-repeat -133px 5px;
+                
+            }
+            
         }
     }
     .footer-bom {
