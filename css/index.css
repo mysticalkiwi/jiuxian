@@ -68,7 +68,8 @@ body {
 
 header {
   height: 117px;
-  width: 98.2%; }
+  width: 98.2%;
+  background: #f2f2f2; }
   header #header-top {
     height: 27px;
     width: 1200px;
@@ -78,34 +79,103 @@ header {
     font-size: 12px;
     color: #999999;
     align-items: center; }
-    header #header-top p {
+    header #header-top > p {
       width: 200px; }
-      header #header-top p a {
+      header #header-top > p a {
         color: #999999;
         padding: 0 3px; }
-        header #header-top p a:hover {
+        header #header-top > p a:hover {
           color: #cc0001;
           text-decoration: underline; }
-    header #header-top li {
-      float: left; }
-      header #header-top li a {
-        padding: 0 9px;
+    header #header-top .head-ul > li {
+      position: relative;
+      float: left;
+      height: 27px;
+      line-height: 27px;
+      padding: 0 10px;
+      text-align: center; }
+      header #header-top .head-ul > li:hover > ul {
+        display: block; }
+      header #header-top .head-ul > li:hover > div {
+        display: block; }
+      header #header-top .head-ul > li > a {
+        float: left;
+        width: 100%;
+        height: 100%;
         color: #999999; }
-        header #header-top li a:hover {
+        header #header-top .head-ul > li > a:hover {
           color: #cc0001;
           text-decoration: underline; }
-      header #header-top li span {
+      header #header-top .head-ul > li span {
         color: #cc0001; }
-    header #header-top li:nth-child(6) a {
+    header #header-top .head-ul > li:nth-child(6) a {
       background: #cc0001;
       color: #fff;
       border-radius: 4px; }
+    header #header-top .head-nav {
+      position: absolute;
+      bottom: -330px;
+      left: 0;
+      z-index: 1;
+      display: none; }
+      header #header-top .head-nav li {
+        width: 180px;
+        height: 80px;
+        padding: 10px;
+        background: #fff; }
+        header #header-top .head-nav li h4 {
+          text-align: left;
+          color: black;
+          font-size: 16px;
+          padding: 0 5px; }
+        header #header-top .head-nav li p a {
+          float: left;
+          padding: 0 5px;
+          color: #666; }
+          header #header-top .head-nav li p a:hover {
+            color: #cc0001;
+            text-decoration: underline; }
+        header #header-top .head-nav li p span {
+          font-weight: bold;
+          color: black; }
+      header #header-top .head-nav li:nth-child(4) {
+        height: 30px;
+        padding: 0 10px; }
+      header #header-top .head-nav li:nth-child(2n-1) {
+        background: #F9F9F9; }
+      header #header-top .head-nav li:nth-child(2n) {
+        background: #ededed; }
   header .adv {
     display: block;
     font-size: 12px;
     width: 100%;
     height: 90px;
     background: url(http://img08.jiuxian.com/bill/2017/1104/88a1653c492444658bea9aaf4204345f.jpg) no-repeat center; }
+  header .head-me:hover {
+    background: #fff; }
+  header .head-me > ul {
+    position: absolute;
+    left: 0;
+    bottom: -81px;
+    width: 100%;
+    display: none; }
+    header .head-me > ul li {
+      width: 100%;
+      height: 27px;
+      font-size: 12px;
+      background: #fff; }
+      header .head-me > ul li:hover a {
+        color: #cc0001;
+        text-decoration: underline; }
+  header .ewm {
+    bottom: -92px;
+    left: -5px;
+    width: 90px;
+    height: 90px;
+    border: solid 1px #aaa;
+    position: absolute;
+    display: none;
+    background: #fff url(../img/erweima.jpg) no-repeat center; }
 
 #flank {
   position: fixed;
@@ -115,40 +185,139 @@ header {
   right: 0;
   top: 0;
   font-size: 14px; }
-  #flank li:hover {
+  #flank .nav > li:hover {
     background: #ce171f; }
-    #flank li:hover a {
+    #flank .nav > li:hover > div {
+      display: block; }
+    #flank .nav > li:hover > a {
       color: #fff; }
   #flank .nav {
-    height: 80%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    #flank .nav li {
+    position: absolute;
+    top: 25%; }
+    #flank .nav > li {
+      position: relative;
+      padding: 10px 0;
+      width: 100%;
+      font-size: 13px; }
+      #flank .nav > li > a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #flank .nav > li > a span {
+          display: block;
+          width: 19px;
+          height: 19px; }
+  #flank .feed {
+    width: 100%;
+    position: absolute;
+    bottom: 25px; }
+    #flank .feed li {
+      width: 100%;
+      height: 30px;
       display: flex;
-      flex-direction: column;
-      text-align: center;
       justify-content: center;
       align-items: center; }
-      #flank .nav li a {
+      #flank .feed li a {
         display: block;
-        padding: 5px 0; }
-      #flank .nav li span {
-        display: block;
-        width: 19px;
-        height: 19px; }
-      #flank .nav li i {
-        display: block; }
-  #flank .feed {
+        width: 15px;
+        height: 16px; }
+      #flank .feed li p {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background: #fff;
+        font-size: 12px;
+        right: 27px;
+        text-align: center;
+        display: none; }
+      #flank .feed li i {
+        background: url(../img/erweima.jpg); }
+      #flank .feed li:hover {
+        background: #CC0000; }
+        #flank .feed li:hover > p {
+          display: block; }
+  #flank .nav-one > div {
     position: absolute;
-    bottom: 32px; }
-    #flank .feed a {
-      display: block;
-      width: 35px;
-      height: 32px; }
-    #flank .feed a:nth-of-type(1) {
-      background: url(../img/grther1.png) no-repeat 10px 187px; }
+    background: #fff;
+    width: 340px;
+    height: 350px;
+    border: solid 1px #cecece;
+    right: 27px;
+    top: 0;
+    display: none; }
+    #flank .nav-one > div > div {
+      width: 100%;
+      height: 115px;
+      border-top: solid 1px #cecece; }
+      #flank .nav-one > div > div > a {
+        float: left;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        #flank .nav-one > div > div > a i {
+          width: 26px;
+          height: 26px;
+          display: block; }
+        #flank .nav-one > div > div > a span {
+          margin: 10px 0;
+          display: block; }
+    #flank .nav-one > div > .via {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 0; }
+      #flank .nav-one > div > .via i {
+        width: 60px;
+        height: 60px;
+        display: block;
+        border-radius: 50%;
+        padding: 5px;
+        border: solid 2px #cecece;
+        background: url(../img/via.jpg) no-repeat center; }
+      #flank .nav-one > div > .via p {
+        margin: 0 30px; }
+        #flank .nav-one > div > .via p a {
+          color: #CC0001; }
+          #flank .nav-one > div > .via p a:hover {
+            text-decoration: underline; }
+  #flank .coll {
+    position: relative; }
+    #flank .coll > div {
+      display: none; }
+      #flank .coll > div .via {
+        position: absolute;
+        border: solid 1px #cecece;
+        background: #fff;
+        top: 0;
+        right: 27px;
+        width: 340px;
+        height: 115px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 0; }
+        #flank .coll > div .via i {
+          width: 60px;
+          height: 60px;
+          display: block;
+          border-radius: 50%;
+          padding: 5px;
+          border: solid 2px #cecece;
+          background: url(../img/via.jpg) no-repeat center; }
+        #flank .coll > div .via p {
+          margin: 0 30px; }
+          #flank .coll > div .via p a {
+            color: #CC0001; }
+            #flank .coll > div .via p a:hover {
+              text-decoration: underline; }
 
 #search {
   height: 125px;
@@ -241,7 +410,8 @@ header {
   position: relative;
   width: 98.2%;
   height: 504px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  z-index: -1; }
   #banner .ban li {
     position: absolute;
     width: 100%;
@@ -257,7 +427,8 @@ header {
     #banner .ban-warp .warp-top {
       width: 1200px;
       height: 34px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      z-index: -1; }
       #banner .ban-warp .warp-top > a {
         float: right; }
       #banner .ban-warp .warp-top .classify {
@@ -313,7 +484,8 @@ header {
   width: 98.2%;
   height: auto;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -1; }
   #lisibox .bgleft a {
     display: block;
     height: 959px;
@@ -325,7 +497,8 @@ header {
     height: 959px;
     width: 361px;
     position: absolute;
-    right: -215px; }
+    right: -215px;
+    z-index: -1; }
   #lisibox .content-warp {
     width: 1200px;
     height: 959px;
@@ -821,3 +994,51 @@ footer {
     height: 205px;
     width: 1200px;
     margin: 0 auto; }
+    footer .footer-bom > dl {
+      margin: 30px 35px;
+      float: left; }
+      footer .footer-bom > dl dt {
+        width: 120px;
+        height: 25px;
+        color: #fff;
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;
+        margin-left: -35px; }
+        footer .footer-bom > dl dt i {
+          width: 27px;
+          height: 26px;
+          float: left;
+          margin-right: 8px; }
+        footer .footer-bom > dl dt span {
+          float: left;
+          line-height: 27px; }
+      footer .footer-bom > dl dd {
+        width: 60px;
+        padding: 5px;
+        color: #cccccc;
+        font-size: 12px; }
+        footer .footer-bom > dl dd a {
+          color: #ccc; }
+          footer .footer-bom > dl dd a:hover {
+            text-decoration: underline; }
+    footer .footer-bom > div {
+      float: left;
+      margin: 30px;
+      width: 120px;
+      height: 40px; }
+      footer .footer-bom > div p {
+        margin: 10px; }
+        footer .footer-bom > div p a {
+          width: 120px;
+          line-height: 28px;
+          display: block;
+          height: 28px;
+          color: #fff;
+          font-size: 12px; }
+          footer .footer-bom > div p a i {
+            width: 28px;
+            height: 28px;
+            display: block;
+            float: left;
+            margin-right: 10px; }
