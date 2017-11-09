@@ -184,7 +184,8 @@ header {
   background: #fff;
   right: 0;
   top: 0;
-  font-size: 14px; }
+  font-size: 14px;
+  z-index: 3; }
   #flank .nav > li:hover {
     background: #ce171f; }
     #flank .nav > li:hover > div {
@@ -235,11 +236,24 @@ header {
         right: 27px;
         text-align: center;
         display: none; }
+        #flank .feed li p a {
+          width: 100%;
+          height: 100%;
+          display: block; }
       #flank .feed li i {
-        background: url(../img/erweima.jpg); }
+        position: absolute;
+        top: 0;
+        right: 27px;
+        display: block;
+        width: 90px;
+        height: 90px;
+        background: #fff url(../img/erweima.jpg) no-repeat center;
+        display: none; }
       #flank .feed li:hover {
         background: #CC0000; }
         #flank .feed li:hover > p {
+          display: block; }
+        #flank .feed li:hover > i {
           display: block; }
   #flank .nav-one > div {
     position: absolute;
@@ -349,7 +363,8 @@ header {
         background: #CC0000;
         border: 0;
         font-size: 18px;
-        color: #fff; }
+        color: #fff;
+        cursor: pointer; }
       #search .search-warp .fom p a {
         font-size: 12px;
         color: #999999;
@@ -410,8 +425,7 @@ header {
   position: relative;
   width: 98.2%;
   height: 504px;
-  margin-bottom: 10px;
-  z-index: -1; }
+  margin-bottom: 10px; }
   #banner .ban li {
     position: absolute;
     width: 100%;
@@ -419,6 +433,10 @@ header {
     top: 34px;
     left: 0;
     z-index: -1; }
+    #banner .ban li a {
+      display: block;
+      width: 100%;
+      height: 470px; }
   #banner .ban-warp {
     width: 100%;
     height: 34px;
@@ -427,14 +445,14 @@ header {
     #banner .ban-warp .warp-top {
       width: 1200px;
       height: 34px;
-      margin: 0 auto;
-      z-index: -1; }
+      margin: 0 auto; }
       #banner .ban-warp .warp-top > a {
         float: right; }
       #banner .ban-warp .warp-top .classify {
         float: left;
         width: 190px;
-        height: 504px; }
+        height: 504px;
+        z-index: 1; }
         #banner .ban-warp .warp-top .classify h2 {
           background: #ce171f;
           font-size: 15px;
@@ -447,17 +465,31 @@ header {
             height: 34px;
             width: 190px; }
         #banner .ban-warp .warp-top .classify > div {
+          position: relative;
           height: 58px;
           width: 170px;
           font-size: 12px;
           padding: 10px;
           background: #fff;
           border-bottom: solid 1px #e4e4e4; }
-          #banner .ban-warp .warp-top .classify > div h4 {
+          #banner .ban-warp .warp-top .classify > div:hover {
+            background: #F1F1F1;
+            border-left: solid 2px #CC0000;
+            margin-left: -2px; }
+            #banner .ban-warp .warp-top .classify > div:hover > div {
+              display: block; }
+          #banner .ban-warp .warp-top .classify > div > h4 {
             font-size: 14px;
             margin: 3px 0;
-            text-indent: 25px; }
-          #banner .ban-warp .warp-top .classify > div a {
+            text-indent: 25px;
+            display: flex;
+            align-content: center;
+            align-items: center; }
+            #banner .ban-warp .warp-top .classify > div > h4 i {
+              width: 14px;
+              height: 19px;
+              float: left; }
+          #banner .ban-warp .warp-top .classify > div > a {
             display: block;
             float: left;
             color: #666666;
@@ -467,9 +499,130 @@ header {
             background: #ff9900;
             color: #fff;
             border-radius: 2px; }
+          #banner .ban-warp .warp-top .classify > div > div {
+            width: 775px;
+            height: 470px;
+            position: absolute;
+            top: 0;
+            left: 190px;
+            background: #fff;
+            display: none; }
+            #banner .ban-warp .warp-top .classify > div > div > a {
+              width: 220px;
+              height: 470px;
+              float: left; }
+            #banner .ban-warp .warp-top .classify > div > div .ify-left {
+              width: 113px;
+              height: 470px;
+              background: #f1f1f1;
+              float: left; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left p {
+                width: 113px;
+                text-align: center;
+                height: 37px;
+                line-height: 37px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left p:nth-child(1) {
+                height: 73px;
+                line-height: 73px; }
+            #banner .ban-warp .warp-top .classify > div > div .ify-left-wine {
+              width: 113px;
+              height: 470px;
+              background: #f1f1f1;
+              float: left; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-wine p {
+                width: 113px;
+                text-align: center;
+                height: 37px;
+                line-height: 37px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-wine p:nth-child(5), #banner .ban-warp .warp-top .classify > div > div .ify-left-wine p:nth-child(7) {
+                height: 73px;
+                line-height: 73px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-wine p:nth-child(6) {
+                height: 110px;
+                line-height: 110px; }
+            #banner .ban-warp .warp-top .classify > div > div .ify-right {
+              float: left;
+              width: 442px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-right ul {
+                width: 350px;
+                height: 470px;
+                margin: 0 auto; }
+                #banner .ban-warp .warp-top .classify > div > div .ify-right ul li {
+                  height: auto;
+                  width: 350px;
+                  border-bottom: solid 1px #cecece;
+                  overflow: hidden; }
+                  #banner .ban-warp .warp-top .classify > div > div .ify-right ul li a {
+                    display: block;
+                    padding: 10px;
+                    float: left; }
+                    #banner .ban-warp .warp-top .classify > div > div .ify-right ul li a span {
+                      color: orangered; }
+                    #banner .ban-warp .warp-top .classify > div > div .ify-right ul li a:hover {
+                      color: #CC0001; }
+            #banner .ban-warp .warp-top .classify > div > div .ify-right-noimg {
+              float: left;
+              width: 662px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-right-noimg ul {
+                width: 570px;
+                height: 470px;
+                margin: 0 auto; }
+                #banner .ban-warp .warp-top .classify > div > div .ify-right-noimg ul li {
+                  height: auto;
+                  width: 570px;
+                  border-bottom: solid 1px #cecece;
+                  overflow: hidden; }
+                  #banner .ban-warp .warp-top .classify > div > div .ify-right-noimg ul li a {
+                    display: block;
+                    padding: 10px;
+                    float: left; }
+                    #banner .ban-warp .warp-top .classify > div > div .ify-right-noimg ul li a span {
+                      color: orangered; }
+                    #banner .ban-warp .warp-top .classify > div > div .ify-right-noimg ul li a:hover {
+                      color: #CC0001; }
+            #banner .ban-warp .warp-top .classify > div > div .ify-left-tea {
+              width: 113px;
+              height: 470px;
+              background: #f1f1f1;
+              float: left; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-tea p {
+                width: 113px;
+                text-align: center;
+                height: 37px;
+                line-height: 37px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-tea p:nth-child(2) {
+                height: 73px;
+                line-height: 73px; }
+            #banner .ban-warp .warp-top .classify > div > div .ify-left-yangjiu {
+              width: 113px;
+              height: 470px;
+              background: #f1f1f1;
+              float: left; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-yangjiu p {
+                width: 113px;
+                text-align: center;
+                height: 73px;
+                line-height: 73px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-yangjiu p:nth-child(3) {
+                height: 37px;
+                line-height: 37px; }
+            #banner .ban-warp .warp-top .classify > div > div .ify-left-beer {
+              width: 113px;
+              height: 470px;
+              background: #f1f1f1;
+              float: left; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-beer p {
+                width: 113px;
+                text-align: center;
+                height: 73px;
+                line-height: 73px; }
+              #banner .ban-warp .warp-top .classify > div > div .ify-left-beer p:nth-child(3) {
+                height: 37px;
+                line-height: 37px; }
       #banner .ban-warp .warp-top .listbox {
         float: left; }
         #banner .ban-warp .warp-top .listbox li {
+          position: relative;
           float: left; }
           #banner .ban-warp .warp-top .listbox li a {
             display: block;
@@ -479,6 +632,12 @@ header {
             font-size: 13px; }
             #banner .ban-warp .warp-top .listbox li a:hover {
               background: #b40c10; }
+          #banner .ban-warp .warp-top .listbox li i {
+            position: absolute;
+            width: 29px;
+            height: 17px;
+            top: -7px;
+            right: 3px; }
 
 #lisibox {
   width: 98.2%;
