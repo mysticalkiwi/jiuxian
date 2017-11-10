@@ -1,179 +1,10 @@
-html,
-body,
-ul,
-li,
-dl,
-dt,
-dd,
-p,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-img,
-table,
-fieldset,
-legend,
-figure {
-    margin: 0;
-    padding: 0;
-}
 
-ul,
-li,
-ol {
-    list-style: none;
-}
-
-img,
-fieldset {
-    border: 0;
-}
-
-img {
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 100;
-}
-
-body {
-    font-family: "微软雅黑";
-}
-
-input,
-a {
-    outline: none;
-}
-
-i,
-em {
-    font-style: normal;
-}
-
-b,
-strong {
-    font-weight: normal;
-}
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
-
-header {
-    width: 100%;
-    height: 88px;
-    .warp {
-        height: 68px;
-        width: 1000px;
-        margin: 0 auto;
-        position: relative;
-        font-size: 12px;
-        padding: 15px 0 5px 0;
-        .head-left {
-            width: 300px;
-            float: left;
-            h1 {
-                float: left;
-                width: 140px;
-                height: 63px;
-                a {
-                    display: block;
-                    width: 140px;
-                    height: 63px;
-                    background: url(../img/logo.jpg) no-repeat;
-                }
-            }
-            img {
-                float: left;
-            }
-        }
-        .head-right{
-            padding-top: 30px;
-            width: 300px;
-             float: right;
-             p{
-                 color: #999;
-                 float: left;
-                  padding: 2px;
-             }
-             >a{
-                 float: left;
-                 color: dodgerblue;
-                  padding: 2px;
-                 margin:0 20px;
-                 &:hover{
-                     text-decoration: underline;
-                 }
-             }
-             span{
-                 color: #333333;
-                 float: left;
-                 cursor: pointer;
-                 padding: 2px;
-                 position: relative;
-                 text-indent: 5px;
-                 border: #fff solid 1px;
-                 &:hover{
-                     border: #aaa solid 1px;
-                     ul{
-                         display: block;
-                     }
-                 }
-                 i{
-                     float: right;
-                     margin:2px 4px;
-                     width:15px ;
-                     height: 14px;
-                     background: url(../img/regLogin-8.png) no-repeat -23px 0;
-                 }
-                 ul{
-                     width: 82px;
-                     position: absolute;
-                     left: 0;
-                     bottom: -104px;
-                     display: none;
-                     background: #fff;
-                     li{
-                        width: 80px;
-                         height: 24px;
-                         border: solid 1px #ccc;
-                         line-height: 24px;
-                         text-indent: 5px;
-                         a{
-                             color: #999;
-                             &:hover{
-                                 text-decoration: underline;
-                             }
-                         }
-                     }
-                 }
-             }
-        }
-    }
-}
 section{
     position: relative;
     width: 100%;
     height: 600px;
     background: url(../img/login/banner.jpg) no-repeat center;
+   
     #login{
         width: 310px;
         height: 365px;
@@ -477,6 +308,7 @@ section{
                         height: 30px;
                         background: url(../img/regLogin-8.png) no-repeat -270px -150px;
                         float: left;
+                        margin: 0 10px;
                     }
                     p{
                         width: 90px;
@@ -504,18 +336,4 @@ section{
         }
     }
     
-}
-footer{
-    margin-top: 50px;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    p{
-        font-size: 12px;
-        line-height: 30px;
-    }
-    span{
-        font-size: 12px;
-        color: red;
-    }
 }
