@@ -1,0 +1,521 @@
+html,
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 88px;
+    .warp {
+        height: 68px;
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        font-size: 12px;
+        padding: 15px 0 5px 0;
+        .head-left {
+            width: 300px;
+            float: left;
+            h1 {
+                float: left;
+                width: 140px;
+                height: 63px;
+                a {
+                    display: block;
+                    width: 140px;
+                    height: 63px;
+                    background: url(../img/logo.jpg) no-repeat;
+                }
+            }
+            img {
+                float: left;
+            }
+        }
+        .head-right{
+            padding-top: 30px;
+            width: 300px;
+             float: right;
+             p{
+                 color: #999;
+                 float: left;
+                  padding: 2px;
+             }
+             >a{
+                 float: left;
+                 color: dodgerblue;
+                  padding: 2px;
+                 margin:0 20px;
+                 &:hover{
+                     text-decoration: underline;
+                 }
+             }
+             span{
+                 color: #333333;
+                 float: left;
+                 cursor: pointer;
+                 padding: 2px;
+                 position: relative;
+                 text-indent: 5px;
+                 border: #fff solid 1px;
+                 &:hover{
+                     border: #aaa solid 1px;
+                     ul{
+                         display: block;
+                     }
+                 }
+                 i{
+                     float: right;
+                     margin:2px 4px;
+                     width:15px ;
+                     height: 14px;
+                     background: url(../img/regLogin-8.png) no-repeat -23px 0;
+                 }
+                 ul{
+                     width: 82px;
+                     position: absolute;
+                     left: 0;
+                     bottom: -104px;
+                     display: none;
+                     background: #fff;
+                     li{
+                        width: 80px;
+                         height: 24px;
+                         border: solid 1px #ccc;
+                         line-height: 24px;
+                         text-indent: 5px;
+                         a{
+                             color: #999;
+                             &:hover{
+                                 text-decoration: underline;
+                             }
+                         }
+                     }
+                 }
+             }
+        }
+    }
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../img/login/banner.jpg) no-repeat center;
+    #login{
+        width: 310px;
+        height: 365px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -202px;
+        right: 257px;
+        padding: 20px;
+        
+        .userlogin{
+            width: 270px;
+            height: 100%;
+            margin: 0 auto;
+         
+            
+            .user-top{
+                width: 270px;
+                height: 40px;
+                border-bottom: solid 1px #999;
+                line-height: 40px;
+               
+                b{
+                    position: absolute;
+                    width: 63px;
+                    height: 63px;
+                    background:url(../img/regLogin-8.png) no-repeat 0 -230px;
+                    cursor: pointer;
+                    top: 0;
+                    right: 0;
+                }
+                i{
+                    color: #e4393c;
+                    font-weight: bold;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                        
+                    }
+                }
+               span:nth-of-type(1){
+                   margin:0 20px;
+                   height: 13px;
+                   display: inline-block;
+                   border-right: solid 1px #aaa;
+               }
+                span:nth-of-type(2){
+                    color: #999;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                       
+                    }
+                 
+                }
+            }
+        }
+        .usercont{
+            height: auto;
+            
+            
+            div{
+                width: 188px;
+                height: 40px;
+                position: relative;
+                margin:20px 0 ;
+                font-size: 12px;
+                color: #999;
+                em{
+                    width: 43px;
+                    height: 40px;
+                    display: flex;
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    background: #f3f3f3;
+                    top: 0;
+                    left: 0;
+                    border: solid 1px #ccc;
+                    i{
+                    width: 20px;
+                    height: 21px;
+                }
+                }
+                b{
+                    position: absolute;
+                    height: 43px;
+                    width: 60px;
+                    line-height: 43px;
+                    right: -80px;
+                    top: 0;
+                    overflow: hidden;
+                    text-align: center;
+                }
+            }
+            input{
+                width: 188px;
+                height: 40px;
+                padding: 0 40px;
+                border: solid 1px #cecece;
+                text-indent: 10px;
+            }
+            .userbtn{
+               width: 270px;
+                padding: 0;
+                background: #CC0000;
+                color: #fff;
+                text-align: center;
+                line-break: 40px;
+                font-size: 18px;
+                border: 0;
+                border-radius: 2px;
+            }
+            .usercok{
+                width: 12px;
+                height: 12px;
+            }
+            .chkbox{
+                width: 80px;
+                float: left;
+            }
+            >a{
+                font-size: 12px;
+                float: right;
+                margin:20px;
+                color: #999;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            >span{
+                font-size: 12px;
+                margin:20px 0 ;
+                float: right;
+                color: dodgerblue;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .userbtm{
+            position: absolute;
+            bottom: 0;
+            width: 270px;
+            margin: 0 auto;
+            height: 50px;
+            border-top: solid 1px #aaa;
+            line-height: 50px;
+            font-size: 12px;
+            color: #999;
+            span{
+                float: left;
+                margin-right: 10px;
+            }
+            a{
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin:10px 5px;
+            }
+            a:nth-of-type(1){
+                background: url(../img/regLogin-8.png) no-repeat 0 -35px;
+                &:hover{
+                    background-position: 0 -86px;
+                }
+            }
+            a:nth-of-type(2){
+                background: url(../img/regLogin-8.png) no-repeat -51px -35px;
+                &:hover{
+                    background-position: -51px -86px;
+                }
+            }
+            a:nth-of-type(3){
+                background: url(../img/regLogin-8.png) no-repeat -102px -35px;
+                &:hover{
+                    background-position: -102px -86px;
+                }
+            }
+            a:nth-of-type(4){
+                background: url(../img/regLogin-8.png) no-repeat -153px -35px;
+                &:hover{
+                    background-position: -153px -86px;
+                }
+            }
+        }
+        .telcont{
+            display: none;
+                div{
+                width: 188px;
+                height: 40px;
+                position: relative;
+                margin:20px 0 ;
+                font-size: 12px;
+                color: #999;
+                em{
+                    width: 43px;
+                    height: 40px;
+                    display: flex;
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    background: #f3f3f3;
+                    top: 0;
+                    left: 0;
+                    border: solid 1px #ccc;
+                    i{
+                    width: 20px;
+                    height: 21px;
+                }
+                }
+                b{
+                    position: absolute;
+                    height: 43px;
+                    width: 60px;
+                    line-height: 43px;
+                    right: -80px;
+                    top: 0;
+                    overflow: hidden;
+                    text-align: center;
+                }
+            }
+            input{
+                width: 188px;
+                height: 40px;
+                padding: 0 40px;
+                border: solid 1px #cecece;
+                text-indent: 10px;
+            }
+            .userbtn{
+               width: 270px;
+                padding: 0;
+                background: #CC0000;
+                color: #fff;
+                text-align: center;
+                line-break: 40px;
+                font-size: 18px;
+                border: 0;
+                border-radius: 2px;
+            }
+            .telyz{
+                width: 270px;
+                input{
+                    float: left;
+                    width: 70px;
+                }
+                >span{
+                    float: right;
+                    display: block;
+                    height: 42px;
+                    width: 110px;
+                    background: #ccc;
+                    border-radius: 3px;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                    color: black;
+                }
+            }
+        }
+        .ewmcont{
+            width: 310px;
+            height: 365px;
+            display: none;
+            h2{
+                width: 200px;
+                height: 40px;
+                text-indent: 20px;
+                line-height: 40px;
+                font-weight: bold;
+                font-size: 16px;
+                color: #666;
+            }
+            >i{
+                position: absolute;
+                width: 63px;
+                height: 66px;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+                background: url(../img/regLogin-8.png) no-repeat -80px -230px;
+            }
+           
+            .code{
+                margin-top: 30px;
+                width: 310px;
+                height: 200px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                 img{
+                width: 150px;
+                height: 150px;
+                }
+                >div{
+                    font-size: 12px;
+                    i{
+                        display: block;
+                        width: 32px;
+                        height: 30px;
+                        background: url(../img/regLogin-8.png) no-repeat -270px -150px;
+                        float: left;
+                    }
+                    p{
+                        width: 90px;
+                        float: left;
+                        >b{
+                            color: red;
+                        }
+                    }
+                }
+            }
+            .ewmbtm{
+                height: 270px;
+                height: 40px;
+                margin-top: 70px;
+                 font-size: 12px;
+                 text-align: right;
+                a{
+                    margin: 10px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+         
+        }
+    }
+    
+}
+footer{
+    margin-top: 50px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    p{
+        font-size: 12px;
+        line-height: 30px;
+    }
+    span{
+        font-size: 12px;
+        color: red;
+    }
+}

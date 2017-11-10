@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="warp">
+				<div class="head-left">
+					<h1><a href=""></a></h1>
+					<img src="img/login/slogan.jpg" />
+				</div>
+				<div class="head-right">
+					<p>欢迎来到酒仙网!</p>
+					<a href="">免费注册</a>
+					<span>帮助中心<i></i>
+						<ul>
+							<li><a href="">配送说明</a></li>
+							<li><a href="">支付方式</a></li>
+							<li><a href="">售后服务</a></li>
+							<li><a href="">企业客户</a></li>
+						</ul>
+					</span>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div id="login">
+				<div class="userlogin">
+					<div class="user-top">
+						<i class="zhlogin">账号登录</i>
+						<span></span>
+						<span class="tellogin">手机动态密码登录</span>
+						<b class = 'skipewm'></b>
+					</div>
+					<div class="usercont">
+						<div>
+							<em>
+								<i style="background: url(img/regLogin-8.png) no-repeat -51px 0;"></i>
+							</em>
+							<input type="text" class="usertxt" placeholder="用户名/邮箱/手机号" />
+						</div>
+						<div>
+							<em><i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i></em><input type="password" class="userpad" placeholder="密码" />
+						</div>
+						<div>
+							<em><i style="background: url(img/regLogin-8.png) no-repeat -423px 0;"></i></em><input type="text" class="useryz" placeholder="验证码" /><b id="yzm"></b>
+						</div>
+						<input type="button" value="登 录" class="userbtn" />
+						<div class="chkbox">
+							<input type="checkbox" class="usercok" />自动登录
+						</div>
+						<span>免费注册</span>
+						<a href="">忘记密码</a>
+					</div>
+	
+					<div class="telcont">
+
+						<div>
+							<em>
+								<i style="background: url(img/regLogin-8.png) no-repeat -51px 0;"></i>
+							</em>
+							<input type="text" class="usertxt" placeholder="手机号" />
+						</div>
+						<div>
+							<em><i style="background: url(img/regLogin-8.png) no-repeat -423px 0;"></i></em><input type="text" class="useryz" placeholder="验证码" /><b id="yzm"></b>
+						</div>
+						<div class= 'telyz'>
+							<em><i style="background: url(img/regLogin-8.png) no-repeat -263px -1px;"></i></em><input type="text" /><span>获取短信验证码</span>
+						</div >
+						<input type="button" value="登 录" class="userbtn" />
+					</div>
+	
+					
+					<div class="userbtm">
+						<span>使用合作账号登录</span>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+					</div>
+				</div>
+			<div class="ewmcont">
+						<h2>扫码登录</h2>
+						<i class = 'skipuser'></i>
+						<div class= "code">
+							<img src="img/loginewm.jpg"/>
+							<div>
+								<i></i>
+								<p>打开<b>手机酒仙APP</b>扫描二维码</p>
+							</div>
+						</div>
+						<div class ='ewmbtm'>
+							<a href="">账号密码登录</a>
+							<a href="">免费注册</a>
+						</div>
+						
+					</div>	
+			</div>
+		</section>
+		<footer>
+			<p>
+				©  酒仙网  2011 jiuxian.com All  Rights Reserved  <a href="">京ICP证110141号</a>  京公网安备1101050188221
+			</p>
+			<span>购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</span>
+		</footer>
+			
+			
+			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				
+				$(function(){
+					$('.zhlogin').eq(0).click(function(){
+						$('.usercont').eq(0).show();
+						$('.telcont').eq(0).hide();
+						$(this).css({"color":"#e4393c","font-weight":"bold"})
+						$('.tellogin').eq(0).css({"color":"#999","font-weight":"normal"})
+					})
+					$('.tellogin').eq(0).click(function(){
+						$('.usercont').eq(0).hide();
+						$('.telcont').eq(0).show();
+						$(this).css({"color":"#e4393c","font-weight":"bold"})
+						$('.zhlogin').eq(0).css({"color":"#999","font-weight":"normal"})
+					})
+					$('.skipewm').eq(0).click(function(){
+						$('.userlogin').eq(0).hide();
+						$('.ewmcont').eq(0).show();
+					})
+					$('.skipuser').eq(0).click(function(){
+						$('.userlogin').eq(0).show();
+						$('.ewmcont').eq(0).hide();
+					})
+				})
+				
+				
+			</script>
+	</body>
+
+</html>
