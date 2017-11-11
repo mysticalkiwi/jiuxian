@@ -48,7 +48,7 @@ section {
     section #login .usercont {
       height: auto; }
       section #login .usercont div {
-        width: 188px;
+        width: 270px;
         height: 40px;
         position: relative;
         margin: 20px 0;
@@ -68,15 +68,24 @@ section {
           section #login .usercont div em i {
             width: 20px;
             height: 21px; }
-        section #login .usercont div b {
+        section #login .usercont div #yzm {
           position: absolute;
           height: 43px;
-          width: 60px;
+          padding: 0 10px;
           line-height: 43px;
-          right: -80px;
+          right: 0;
           top: 0;
-          overflow: hidden;
           text-align: center; }
+        section #login .usercont div b {
+          position: absolute;
+          right: 0;
+          bottom: -15px;
+          height: 20px;
+          background: #ed787f;
+          color: #fff;
+          padding: 0 5px;
+          line-height: 20px;
+          display: none; }
       section #login .usercont input {
         width: 188px;
         height: 40px;

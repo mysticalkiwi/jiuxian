@@ -90,7 +90,7 @@ header {
           display: block;
           width: 140px;
           height: 63px;
-          background: url(../../img/logo.jpg) no-repeat; }
+          background: url(../img/logo.jpg) no-repeat; }
       header .warp .head-left img {
         float: left; }
     header .warp .head-right {

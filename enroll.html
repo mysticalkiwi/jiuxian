@@ -33,19 +33,19 @@
 				<b class='sign cutb'>企业用户注册</b>
 				<div class="box">
 					<div>
-						手机号<i style="background: url(img/regLogin-8.png) no-repeat -51px 0;"></i><input type="tel" class="tel"/>
+						手机号<i style="background: url(img/regLogin-8.png) no-repeat -51px 0;"></i><input type="tel" class="tel"/><em></em>
 					</div>
 					<div>
-						验证码<i style="background: url(img/regLogin-8.png) no-repeat -426px 0;"></i><input type="text" class="yzm" />
+						验证码<i style="background: url(img/regLogin-8.png) no-repeat -426px 0;"></i><input type="text" class="yzm" /><a href="" class="ran"></a><em></em>
 					</div>
 					<div class="codebox">
 						<b>校验码</b><i style="background: url(img/regLogin-8.png) no-repeat -263px 0;"></i><input type="text" class="code" /><a href="">获取短信验证码</a>
 					</div>
 					<div>
-						设置密码<i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i><input type="password" class="pad" />
+						设置密码<i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i><input type="password" class="pad" /><em></em>
 					</div>
 					<div>
-						确认密码<i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i><input type="password" class="apasd"/>
+						确认密码<i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i><input type="password" class="apasd"/><em></em>
 					</div>
 					<div class="cekbox">
 						<input type="checkbox" class="cek" /><p>我已阅读并同意<a href="">《酒仙网用户注册协议》</a></p>
@@ -64,22 +64,22 @@
 					<div>
 						<span>用户名</span>
 						<i style="background:url(img/regLogin-8.png) no-repeat -51px 0 ;"></i>
-						<input type="text" class="user1"  />
+						<input type="text" class="user1"  /><b></b>
 					</div>
 					<div>
 						<span>邮箱</span>
 						<i style="background:url(img/regLogin-8.png) no-repeat -230px 5px ;"></i>
-						<input type="text" class="eml"  />
+						<input type="text" class="eml"  /><b></b>
 					</div>
 					<div>
 						<span>设置密码</span>
 						<i style="background:url(img/regLogin-8.png) no-repeat -80px 0 ;"></i>
-						<input type="password" class="pas1"  />
+						<input type="password" class="pas1"  /><b></b>
 					</div>
 					<div>
 						<span>确认密码</span>
 						<i style="background:url(img/regLogin-8.png) no-repeat -80px 0 ;"></i>
-						<input type="password" class="apasd1"  />
+						<input type="password" class="apasd1"  /><b></b>
 					</div>
 					<div class="cap">
 						<h2>公司信息</h2> <p>（*为必填项，请确认填写正确。）</p>
@@ -148,21 +148,6 @@
 			
 			
 			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-			<script type="text/javascript">
-				
-				
-				$(function(){
-					$('.cuti').click(function(){
-						$('#enroll').show().siblings().hide();
-						$('section').eq(0).css("background-image","url(img/bg.jpg)")
-					})
-					$('.cutb').click(function(){
-						$('#enroll-qy').show().siblings().hide();
-						$('section').css("background",0);
-					})
-				})
-				
-				
-			</script>
+			<script src="js/enroll.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

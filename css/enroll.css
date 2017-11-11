@@ -64,6 +64,14 @@ section {
         text-align: right;
         position: relative;
         color: #666; }
+        section #enroll .box > div .ran {
+          position: absolute;
+          height: 50px;
+          width: 80px;
+          line-height: 50px;
+          text-align: center;
+          right: 0;
+          bottom: 0; }
         section #enroll .box > div > i {
           width: 21px;
           height: 21px;
@@ -78,6 +86,18 @@ section {
           padding: 0 30px;
           margin-top: 7px;
           margin-left: 30px; }
+        section #enroll .box > div > em {
+          display: none;
+          text-align: center;
+          font-size: 12px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          color: #fff;
+          background: #ed787f;
+          height: 20px;
+          padding: 0 10px;
+          line-height: 20px; }
       section #enroll .box .codebox {
         text-align: left;
         position: relative; }

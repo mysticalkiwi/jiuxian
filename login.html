@@ -17,7 +17,7 @@
 				</div>
 				<div class="head-right">
 					<p>欢迎来到酒仙网!</p>
-					<a href="">免费注册</a>
+					<a href="enroll.html">免费注册</a>
 					<span>帮助中心<i></i>
 						<ul>
 							<li><a href="">配送说明</a></li>
@@ -43,13 +43,13 @@
 							<em>
 								<i style="background: url(img/regLogin-8.png) no-repeat -51px 0;"></i>
 							</em>
-							<input type="text" class="usertxt" placeholder="用户名/邮箱/手机号" />
+							<input type="text" class="usertxt" placeholder="用户名/邮箱/手机号" /><b></b>
 						</div>
 						<div>
-							<em><i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i></em><input type="password" class="userpad" placeholder="密码" />
+							<em><i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i></em><input type="password" class="userpad" placeholder="密码" /><b></b>
 						</div>
 						<div>
-							<em><i style="background: url(img/regLogin-8.png) no-repeat -423px 0;"></i></em><input type="text" class="useryz" placeholder="验证码" /><b id="yzm"></b>
+							<em><i style="background: url(img/regLogin-8.png) no-repeat -423px 0;"></i></em><input type="text" class="useryz" placeholder="验证码" /><a href='' id="yzm"></a><b></b>
 						</div>
 						<input type="button" value="登 录" class="userbtn" />
 						<div class="chkbox">
@@ -97,7 +97,7 @@
 						</div>
 						<div class ='ewmbtm'>
 							<a href="">账号密码登录</a>
-							<a href="">免费注册</a>
+							<a href="enroll.html">免费注册</a>
 						</div>
 						
 					</div>	
@@ -112,33 +112,7 @@
 			
 			
 			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-			<script type="text/javascript">
-				
-				$(function(){
-					$('.zhlogin').eq(0).click(function(){
-						$('.usercont').eq(0).show();
-						$('.telcont').eq(0).hide();
-						$(this).css({"color":"#e4393c","font-weight":"bold"})
-						$('.tellogin').eq(0).css({"color":"#999","font-weight":"normal"})
-					})
-					$('.tellogin').eq(0).click(function(){
-						$('.usercont').eq(0).hide();
-						$('.telcont').eq(0).show();
-						$(this).css({"color":"#e4393c","font-weight":"bold"})
-						$('.zhlogin').eq(0).css({"color":"#999","font-weight":"normal"})
-					})
-					$('.skipewm').eq(0).click(function(){
-						$('.userlogin').eq(0).hide();
-						$('.ewmcont').eq(0).show();
-					})
-					$('.skipuser').eq(0).click(function(){
-						$('.userlogin').eq(0).show();
-						$('.ewmcont').eq(0).hide();
-					})
-				})
-				
-				
-			</script>
+			<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>

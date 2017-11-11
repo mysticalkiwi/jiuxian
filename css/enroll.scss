@@ -68,6 +68,15 @@ section {
             text-align: right;
             position: relative;
             color: #666;
+            .ran{
+                position: absolute;
+                height: 50px;
+                width: 80px;
+                line-height: 50px;
+                text-align: center;
+                right: 0;
+                bottom: 0;
+            }
             >i{
                 width: 21px;
                 height: 21px;
@@ -85,7 +94,19 @@ section {
                 margin-left: 30px;
                 
             }
-            
+            >em{
+                display: none;
+                text-align: center;
+                font-size: 12px;
+                     position: absolute;
+                     right: 0;
+                     bottom: 0;
+                     color: #fff;
+                     background: #ed787f;
+                     height: 20px;
+                     padding: 0 10px;
+                     line-height: 20px;
+                 }
             }
             .codebox{
                 text-align: left;
@@ -239,6 +260,7 @@ section {
                      margin-right: 10px;
                      margin-top: 13px ;
                  }
+                 
                  >i{
                      position: absolute;
                      width: 21px;
