@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 	</head>
 
@@ -51,7 +51,10 @@
 						<div>
 							<em><i style="background: url(img/regLogin-8.png) no-repeat -423px 0;"></i></em><input type="text" class="useryz" placeholder="验证码" /><a href='' id="yzm"></a><b></b>
 						</div>
-						<input type="button" value="登 录" class="userbtn" />
+						<div class="btnbox">
+							<input type="button" value="登 录" class="userbtn" />
+						<p class="err"></p>
+						</div>
 						<div class="chkbox">
 							<input type="checkbox" class="usercok" />自动登录
 						</div>
@@ -113,6 +116,28 @@
 			
 			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 			<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				$.get('json/user.php',function(data){
+				data = JSON.parse(data);
+				
+				$('.userbtn').click(function(){
+					console.log(str)
+					if($('.useryz').val() == str){
+						for (var i in data){
+							if($('.usertxt').val() == data[i].user){
+								if($('.userpad').val() == data[i].psd){
+									location.href = "index.html"
+								}else{
+									$('.err').show().html("账号或密码错误")
+								}
+							}
+						}
+					}else{
+						$('.err').show().html("验证码错误")
+					}
+				})
+			})
+			</script>
 	</body>
 
 </html>

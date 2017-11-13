@@ -123,6 +123,15 @@ section {
         cursor: pointer; }
         section #login .usercont > span:hover {
           text-decoration: underline; }
+      section #login .usercont .btnbox {
+        margin: 0; }
+        section #login .usercont .btnbox p {
+          position: absolute;
+          height: 20px;
+          right: 0;
+          text-align: right;
+          color: #CC0001;
+          display: none; }
     section #login .userbtm {
       position: absolute;
       bottom: 0;

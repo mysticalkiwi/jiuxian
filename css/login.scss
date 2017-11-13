@@ -64,7 +64,7 @@ section{
         }
         .usercont{
             height: auto;
-            div{
+             div{
                 width: 270px;
                 height: 40px;
                 position: relative;
@@ -134,6 +134,7 @@ section{
             .chkbox{
                 width: 80px;
                 float: left;
+               
             }
             >a{
                 font-size: 12px;
@@ -152,6 +153,17 @@ section{
                 cursor: pointer;
                 &:hover{
                     text-decoration: underline;
+                }
+            }
+            .btnbox{
+                margin: 0;
+                p{
+                    position: absolute;
+                   height: 20px;
+                    right: 0;
+                    text-align: right;
+                    color: #CC0001;
+                    display: none;
                 }
             }
         }
