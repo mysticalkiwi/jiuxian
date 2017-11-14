@@ -2,61 +2,95 @@
 	"1000": {
 		"id": "1000",
 		"cap": "52°五粮液股份华表(精品) 500ml",
-		"src": "http://img06.jiuxian.com/2017/0320/513caf77f5a44cc6881dbcc4583fabb82.jpg",
-		"money": "69"
+		"src": "http://img08.jiuxian.com/2017/0624/bf193a6e3e15448ea525b166bbd5fb1e5.jpg",
+		"money": "69",
+		"src1" : "http://img09.jiuxian.com/2017/0320/4302cc1bc5ba4460baccb8e84188a2ba5.jpg",
+		"src2" : "http://img08.jiuxian.com/2017/0320/bd100318a8a54604b7677105a56ebb7c5.jpg",
+		"src3" : "http://img08.jiuxian.com/2017/0320/9f8d8b5b2552449cb9fce2b8d9c17a855.jpg"
 	},
 	"1001": {
 		"id": "1001",
 		"cap": "52°水井坊珍酿八号500ml",
-		"src": "http://img06.jiuxian.com/2017/1027/e08084499a37419397956e6dbcffea562.jpg",
-		"money": "339"
+		"src": "http://img07.jiuxian.com/2017/0912/13f40b853c2e45e5ad7442d4368f55375.jpg",
+		"money": "339",
+		"src1" : "http://img06.jiuxian.com/2017/0909/709a2142d1694a0a9c81a40cf8f7011d5.jpg",
+		"src2" : "http://img07.jiuxian.com/2017/0909/90e0bfa11a3d478f89e954ebc74261045.jpg",
+		"src3" : "http://img09.jiuxian.com/2017/0909/747f6458f58949c9a450fb69f97770e25.jpg",
+		"src4" : "http://img06.jiuxian.com/2017/0909/734de96c07ed4492ab50234f4f80734c5.jpg"
 	},
 	"1002": {
 		"id": "1002",
 		"cap": "52°泸州老窖华夏窖酒500ml",
-		"src": "http://img06.jiuxian.com/2016/1129/4905ee0bdaa64f17b4e564a3287edc7b2.jpg",
-		"money": "258"
+		"src": "http://img10.jiuxian.com/2016/1129/4905ee0bdaa64f17b4e564a3287edc7b5.jpg",
+		"money": "258",
+		"src1" : "http://img10.jiuxian.com/2016/1129/db573d0e357d41b58a990b92c4f621015.jpg",
+		"src2" : "http://img10.jiuxian.com/2016/1129/d8a32315194442da864c63266229047b5.jpg",
+		"src3" : "http://img09.jiuxian.com/2016/1129/59e97e664b8344768a8188b0e4480a9c5.jpg"
+		
 	},
 	"1003": {
 		"id": "1003",
 		"cap": "智利原瓶进口报喜鸟美乐特选干红葡萄酒",
-		"src": "http://img06.jiuxian.com/2017/1030/8d669b96df5542f89b4bed584f7d8b152.jpg",
-		"money": "199"
+		"src": "http://img09.jiuxian.com/2017/1030/6155c5311fa54bf98eb8dc4ee2f2d86b5.jpg",
+		"money": "199",
+		"src1" : "http://img06.jiuxian.com/2017/1030/b5be2df3c65c4f2592b6ded4eb5f7f1e5.jpg",
+		"src2" : "http://img07.jiuxian.com/2017/1030/86ada5b1de1d4124a5839e13cbcdd1855.jpg",
+		"src3" : "http://img08.jiuxian.com/2017/1030/151ffbdcf89246f68852e14dcc882ba15.jpg",
+		"src4" : "http://img09.jiuxian.com/2017/1030/7c2e406576b940479ea57673999c0aae5.jpg"
 	},
 	"1004": {
 		"id": "1004",
-		"cap": "法国整箱红酒法国拉菲珍藏伯尔纳多葡萄酒",
-		"src": "http://img06.jiuxian.com/2017/0209/94a05bf6e0f14de1b2537de4845302ec2.jpg",
-		"money": "499"
+		"cap": "法国荣耀圣母院干红葡萄酒 750ml",
+		"src": "http://img06.jiuxian.com/2017/0309/52ebef670b4840ecba21e7cee9578cc05.jpg",
+		"money": "399",
+		"src1" : "http://img07.jiuxian.com/2017/0309/52d33085896844a4b2f049007947c13e5.jpg",
+		"src2" : "http://img06.jiuxian.com/2017/0309/ddbf66130a454957979525e11ffd9bc25.jpg"
 	},
 	"1005": {
 		"id": "1005",
 		"cap": "52°剑南春K6 500ml",
-		"src": "http://img06.jiuxian.com/2016/1125/d19f617173334233a64fc3764466da002.jpg",
-		"money": "129"
+		"src": "http://img08.jiuxian.com/2016/1125/d19f617173334233a64fc3764466da005.jpg",
+		"money": "129",
+		"src1" : "http://img07.jiuxian.com/2016/1125/f7aff429dea94588afbdf0129e0260a55.jpg",
+		"src2" : "http://img10.jiuxian.com/2016/1125/706c952465084cdeb678cf2480962d945.jpg",
+		"src3" : "http://img10.jiuxian.com/2016/1125/60b980c3154344d3aa9ca601ae33aeb65.jpg"
 	},
 	"1006": {
 		"id": "1006",
 		"cap": "51°茅台汉酱酒500ml",
-		"src": "http://img06.jiuxian.com/2013/1002/87878a99239f4f9faec6b001acebec802.jpg",
-		"money": "398"
+		"src": "http://img10.jiuxian.com/2013/1002/87878a99239f4f9faec6b001acebec805.jpg",
+		"money": "398",
+		"src1" : "http://img08.jiuxian.com/2013/1105/f270a06693c048c09b2986d68cd5f1925.jpg",
+		"src2" : "http://img07.jiuxian.com/2013/1002/7c6613760fcb48838aec08fed50d17505.jpg",
+		"src3" : "http://img08.jiuxian.com/2013/1002/a56108b468544ef7aaf1657db3da2d685.jpg"
 	},
 	"1007": {
 		"id": "1007",
 		"cap": "52°泸州老窖原浆酒 喜庆红瓶装",
-		"src": "http://img06.jiuxian.com/2017/0914/952d4b2ee575475b8bb7ff0f96734b492.jpg",
-		"money": "229"
+		"src": "http://img06.jiuxian.com/2017/0914/952d4b2ee575475b8bb7ff0f96734b495.jpg",
+		"money": "229",
+		"src1" : "http://img08.jiuxian.com/2017/1110/0ec5ab26964a41ca9802bed6a65bb6275.jpg",
+		"src1" : "http://img09.jiuxian.com/2017/0914/a2eb13848be4445d8dd2a098c37871ad5.jpg",
+		"src1" : "http://img08.jiuxian.com/2017/0914/37c01ce4fe1a45deadcacdce547356c05.jpg"
 	},
 	"1008": {
 		"id": "1008",
-		"cap": "法国整箱红酒法国(原瓶进口)",
-		"src": "http://img06.jiuxian.com/2016/1024/82eb9ae70fc34c36a105b565f1c1164f2.jpg",
-		"money": "99"
+		"cap": "【酒仙自营】法国整箱红酒法国原瓶进口AOP勆迪干红葡萄酒750ml（6瓶装）",
+		"src": "http://img06.jiuxian.com/2016/1109/964e4921b2724df282993cd4d30674de5.jpg",
+		"money": "279",
+		"src1" : "http://img10.jiuxian.com/2016/1109/299a95dc637b4a6d856b56f9eeaf61c95.jpg",
+		"src2" : "http://img08.jiuxian.com/2016/1109/b169b670a6404ddc8c4cb20b97f6edc25.jpg",
+		"src3" : "http://img07.jiuxian.com/2016/1109/4903efdf978044a792e0f141c52f8e605.jpg",
+		"src4" : "http://img10.jiuxian.com/2016/1109/27abecae76d64106b5afaf377bbbc44b5.jpg"
 	},
 	"1009": {
 		"id": "1009",
 		"cap": "40°英国芝华士威士忌500ml",
-		"src": "http://img06.jiuxian.com/2017/0110/902babce85394325b90be604fd0963852.jpg",
-		"money": "149"
+		"src": "http://img06.jiuxian.com/2016/1205/57197766c4af4801a655de456b2095205.jpg",
+		"money": "149",
+		"src1" : "http://img10.jiuxian.com/2016/1205/e8bf09e5fc7543a8a9f794a303d047705.jpg",
+		"src2" : "http://img06.jiuxian.com/2016/1205/d47bc64c2e864fbfa07ed131a57526745.jpg",
+		"src3" : "http://img08.jiuxian.com/2016/1205/4b5e1aa177a848adad0c08ecbb3528705.jpg",
+		"src4" : "http://img07.jiuxian.com/2016/1205/b31d0acdf576455c86cbb35e7ee4e4705.jpg"
 	}
 }

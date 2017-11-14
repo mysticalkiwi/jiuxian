@@ -28,7 +28,9 @@ nav {
           width: 190px; }
       nav .warp-top .classify > div {
         display: none;
-        top: 470px;
+        z-index: 4;
+        position: absolute;
+        float: left;
         height: 58px;
         width: 170px;
         font-size: 12px;
@@ -66,7 +68,7 @@ nav {
           width: 775px;
           height: 470px;
           position: absolute;
-          top: 34px;
+          top: 0;
           left: 190px;
           background: #fff;
           display: none; }
@@ -276,6 +278,9 @@ section {
             margin: 0 3px;
             cursor: pointer;
             border: solid 2px #fff; }
+            section .mag .glap .smlimg ul li img {
+              width: 54px;
+              height: 54px; }
           section .mag .glap .smlimg ul .listz {
             border: solid 2px #CC0000; }
     section .mag .xinxi {

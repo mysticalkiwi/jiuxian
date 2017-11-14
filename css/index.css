@@ -329,7 +329,8 @@
         width: 218px;
         height: 78px;
         padding: 0 25px;
-        border: solid 1px #ECECEC; }
+        border: solid 1px #ECECEC;
+        overflow: hidden; }
         #lisibox .content-warp .aff .aff-cont a {
           width: 100px;
           font-size: 12px;
@@ -595,7 +596,8 @@ section {
         padding: 0 10px;
         display: flex;
         justify-content: space-between;
-        font-size: 12px; }
+        font-size: 12px;
+        background: #fff; }
         section .one-cont .one-right .one-right-t h6 {
           font-weight: bold;
           font-size: 12px;
@@ -619,7 +621,9 @@ section {
         position: absolute;
         display: none;
         bottom: 0;
-        left: 0; }
+        left: 0;
+        overflow: hidden;
+        background: #fff; }
         section .one-cont .one-right > ul li {
           height: 119px;
           width: 184px;
@@ -632,15 +636,20 @@ section {
             float: left; }
           section .one-cont .one-right > ul li p {
             width: 80px;
+            height: 30px;
             font-size: 12px;
             color: #666;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 20px;
             float: left; }
             section .one-cont .one-right > ul li p:hover {
               color: #CC0001;
               text-decoration: underline; }
           section .one-cont .one-right > ul li span {
             color: red;
-            font-size: 20px; }
+            font-size: 20px;
+            float: left; }
   section .two-cont {
     border-top: solid 2px #c37632; }
   section .three,
@@ -811,7 +820,8 @@ section {
   section .selist li {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    background: #fff; }
     section .selist li p {
       padding: 0 10px;
       width: 160px;

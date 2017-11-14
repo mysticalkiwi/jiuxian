@@ -33,7 +33,7 @@
 						<a href=""><span>CEO邮箱</span></a>
 					</li>
 					<li>
-						<a href="">购物车0件</a>
+						<a href="">购物车<span class="num"></span>件</a>
 					</li>
 					<li>
 						<a href=""><span>CLUB会员</span></a>
@@ -120,11 +120,11 @@
 						<div class="via">
 							<i></i>
 							<p>您好!请
-								<a href="">登录</a>
+								<a href="login.html">登录</a>
 							</p>
 						</div>
 						<div>
-							<a href="">
+							<a href="login.html">
 								<i style="background: url(img/grther1.png) no-repeat -66px -190px;"></i>
 								<span>我的订单</span>
 							</a>
@@ -152,13 +152,13 @@
 						<div class="via">
 							<i></i>
 							<p>您好!请
-								<a href="">登录</a>
+								<a href="login.html">登录</a>
 							</p>
 						</div>
 					</div>
 				</li>
-				<li>
-					<a href=""><span style="background: url(img/grther1.png) no-repeat -80px -163px"></span><i style="width:14px;">购物车</i></a>
+				<li class="mai">
+					<a href="javascript:void(0);"><span style="background: url(img/grther1.png) no-repeat -80px -163px"></span><i style="width:14px;">购物车</i></a>
 				</li>
 				<li>
 					<a href=""><span style="background: url(img/grther1.png) no-repeat -120px -163px"></span><i>客服</i></a>
@@ -762,9 +762,9 @@
 		<div id="maimaimai">
 			<i></i>
 			<h3>该商品已成功放入购物车</h3>
-			<p>购物车共<span></span>件商品</p>
+			<p>购物车共<span class="num"></span>件商品</p>
 			<a href="javascript:void(0)">继续购物</a>
-			<a href="javascript:void(0)">去购车结算</a>
+			<a href="cat.html">去购物车结算</a>
 		</div>
 
 		<footer>
@@ -912,8 +912,37 @@
 				</div>
 			</div>
 		</div>
-	
-	
+			<div id="cat">
+			<div class="top">
+				<h3>购物车</h3>
+				<span></span>
+			</div>
+			<div class="mid">
+				<p class="bumai"><i></i></p>
+				<p class="bumai">您还未选中要购买的商品，<br />
+					快去挑选吧~</p>
+				<ul>
+					<li>
+						<img src="img/11huodong3.png"/>
+						<a href="">52°汾酒集团清韵475ml(6瓶装)</a>
+						<span>1</span>
+						<i>	213</i>
+						<b>1</b>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="btm">
+				<div class="btm1">
+					<p><span class="num">0</span>件商品</p>
+					<i class="mny">¥0</i>
+				</div>
+				<div class="btm2">
+				<input type="button" value="去购物车结算" />
+				</div>
+			</div>
+		</div>
+			<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 			<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
 			

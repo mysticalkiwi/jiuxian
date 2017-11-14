@@ -80,6 +80,7 @@ header {
     height: auto;
     width: 98.2%;
     background: #f2f2f2;
+    
     #header-top {
         height: 27px;
         width: 1200px;
@@ -213,6 +214,7 @@ header {
             bottom: -81px;
             width: 100%;
             display: none;
+            z-index: 7;
             li {
                 width: 100%;
                 height: 27px;
@@ -736,6 +738,155 @@ footer {
               line-height: 30px;
             }
            
+        }
+    }
+}
+#cat{
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    background: #fff;
+    right: 1.8%;
+    top: 0;
+    border: solid 1px #CECECE;
+    display: none;
+    
+    .top{
+        width: 250px;
+        height: 53px;
+        position: absolute;
+        top: 0;
+        padding: 0 10px;
+        background: #f9f9f9;
+        border-bottom: 1px solid #ededed;
+        line-height: 53px;
+         h3{
+            font-size: 18px;
+            color: #666;
+            font-weight: bold;
+            float: left;
+        }
+        span{
+            right: 20px;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            margin-top: -6px;
+            top: 50%;
+            background: url(../../11/jiuxian/img/grther1.png) no-repeat right top;
+            cursor: pointer;
+        }
+    }
+    .btm{
+        height: 150px;
+        width: 270px;
+        position: absolute;
+        bottom: 0;
+        font-size: 12px;
+        line-height: 40px;
+        background: #f9f9f9;
+        .btm1{
+            height: 40px;
+            padding: 0 10px;
+            span,i{
+                color: #CC0001;
+            }
+            p{
+                float: left;
+            }
+            i{
+                float: right;
+            }
+        }
+        .btm2{
+          padding: 30px 55px;
+            input{
+                width: 166px;
+                margin: 0 auto;
+                height: 30px;
+                background: #cf171f;
+                border: 0;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .mid{
+        width: 270px;
+        height: auto;
+        position:absolute;
+        top: 53px;
+        font-size: 12px;
+        padding-top: 40px;
+        p{
+            text-align: center;
+            line-height: 25px;
+            color: #999;
+            i{
+            display: inline-block;
+            width: 104px;
+            height: 110px;
+            background: url(../img/cartEmptyPho.jpg) no-repeat;
+        }
+        }
+        ul{
+             width: 270px;
+            li{
+                float: left;
+                width: 248px;
+                height: 54px;
+                padding: 10px;
+                border: 1px dotted #ddd;
+                line-height: 54px;
+                position: relative;
+                b{
+                    display: none;
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    color: red;
+                    background: url(../img/srpIcons.png) no-repeat -51px -173px;
+                    
+                }
+                img{
+                    float: left;
+                    width: 52px;
+                    height: 52px;
+                    border:0;
+                }
+                a{
+                    overflow: hidden;
+                    height: 30px;
+                    width: 70px;
+                    float: left;
+                    text-overflow: ellipsis;
+                    line-height: normal;
+                    margin-top: 5px;
+                    &:hover{
+                        color: #CC0001;
+                        text-decoration: underline;
+                    }
+                    
+                }
+                span{
+                    float: left;
+                    width: 30px;
+                    height: 15px;
+                    text-align: center;
+                    margin: 0 10px;
+                }
+                i{
+                    float:right;
+                    text-align: center;
+                    width: 60px;
+                }
+            }
+        }
+        .bumai{
+            display: none;
         }
     }
 }

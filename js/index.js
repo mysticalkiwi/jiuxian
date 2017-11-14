@@ -10,6 +10,8 @@ var pro = document.getElementsByClassName('pro-1');
 var tuijian = document.getElementsByClassName('tuijian');
 var selist = document.getElementsByClassName('selist');
 var btn_list = document.getElementsByClassName('btn-list');
+var str = '';
+var atr = '';
 
 function move(banner, banner2, spanname) {
 	$(banner).find('li').eq(index).fadeIn(1000).siblings().fadeOut(1000);
@@ -55,48 +57,17 @@ addT(ban, ban_p, "ban-span");
 spanC(ban, ban_p, "ban-span");
 
 $.get("json/json.json", function(data) {
-	  
-	  console.log(data)
-	for(var j = 0; j < pro.length; j++) {
-		for(var n = 0; n < pro[j].children.length; n++) {
-			for(var i in data) {
-				pro[j].children[n].children[0].children[0].src = data[i].src;
-				pro[j].children[n].children[0].children[1].innerHTML = data[i].cap;
-				pro[j].children[n].children[1].innerHTML = "¥" + data[i].money;
 
-			}
-		}
+	for(var i in data) {
+		str += `<li><a href=''><img src = ${data[i].src}><p>${data[i].cap}</p></a><span>￥${data[i].money}</span></li>`;
+		atr += `<li><a href=""><img src="${data[i].src}"/></a><a href=""><p>${data[i].cap}</p></a><span>￥${data[i].money}</span></li>`
 	}
-	for(var j = 0; j < tuijian.length; j++) {
-		for(var n = 0; n < tuijian[j].children.length; n++) {
-			for(var i in data) {
-				tuijian[j].children[n].children[0].children[0].src = data[i].src;
-				tuijian[j].children[n].children[0].children[1].innerHTML = data[i].cap;
-				tuijian[j].children[n].children[1].innerHTML = "¥" + data[i].money;
 
-			}
-		}
-	}
-	for(var j = 0; j < selist.length; j++) {
-		for(var n = 0; n < selist[j].children.length; n++) {
-			for(var i in data) {
-				selist[j].children[n].children[0].children[0].src = data[i].src;
-				selist[j].children[n].children[0].children[1].innerHTML = data[i].cap;
-				selist[j].children[n].children[1].innerHTML = "¥" + data[i].money;
+	$('.pro-1').html(str)
+	$('.tuijian').html(str);
+	$('.selist').html(str);
+	$('.btn-list').html(atr);
 
-			}
-		}
-	}
-	for(var j = 0; j < btn_list.length; j++) {
-		for(var n = 0; n < btn_list[j].children.length; n++) {
-			for(var i in data) {
-				btn_list[j].children[n].children[0].children[0].src = data[i].src;
-				btn_list[j].children[n].children[1].children[0].innerHTML = data[i].cap;
-				btn_list[j].children[n].children[2].innerHTML = "¥" + data[i].money;
-				break;
-			}
-		}
-	}
 })
 
 function move2() {
@@ -211,7 +182,7 @@ $(function() {
 	$("#sus").find('.backtop').mouseout(function() {
 		$(this).find('i').css('background', "url(img/grther.png) no-repeat -74px -190px")
 	})
-	
+
 })
 
 function sus() {
@@ -224,15 +195,20 @@ function sus() {
 }
 document.onscroll = sus;
 
-
-function json_array(data){  
-     var len=eval(data);  
-     var arr=[];  
-     for(var i=0;i<len;i++){  
-     arr[i]['id']=data[i].id;
-      arr[i]['url']=data[i].src;  
-      arr[i]['cap']=data[i].cap;  
-      arr[i]['money']=data[i].money;  
-     }  
-     return arr;    
+function json_array(data) {
+	var len = eval(data);
+	var arr = [];
+	for(var i = 0; i < len; i++) {
+		arr[i]['id'] = data[i].id;
+		arr[i]['url'] = data[i].src;
+		arr[i]['cap'] = data[i].cap;
+		arr[i]['money'] = data[i].money;
+	}
+	return arr;
 }
+$(".mai").click(function() {
+	$('#cat').show()
+})
+$('#cat').find('.top').find('span').click(function() {
+	$('#cat').hide()
+})
