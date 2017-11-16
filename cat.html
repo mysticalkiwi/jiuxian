@@ -246,39 +246,7 @@
 
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			var str = '';
-			var objCookie = {};
-			$(function() {
-
-				$.get("json/json.json", function(data) {
-					if(getCookie("cart")) {
-						var objCookie = JSON.parse(getCookie("cart"));
-					} else {
-						var objCookie = {};
-					}
-					for(var i in objCookie) {
-						var obj = data[i];
-						console.log(obj.src)
-						var zj = obj.money*objCookie[i]
-						str += `<li><i></i><div class="lig"><img src=${obj.src}><a href="">${obj.cap}</a></div><div class="lig1">${obj.money}</div><div class="lig2">233</div><div class="lig3">${objCookie[i]}</div><div class="lig4">${zj}</div><div class="lig5"><b dataid=${i}>删除</b></div></li>`
-					}
-					$("#shop").append(str)
-				})
-				
-				$("#shop").on("click","b",function(){
-					$(this).parent().parent().remove();
-					var id = this.getAttribute("dataid");
-					delete objCookie[id];
-					var strCookie = JSON.stringify(objCookie[id]);
-					setCookie("cart",strCookie,7);
-				})
-
-			})
-			
-			
-		</script>
-
+		<script src="js/cat.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>

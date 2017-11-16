@@ -269,7 +269,8 @@ section {
           display: inline-block;
           cursor: pointer; }
         section .mag .glap .smlimg ul {
-          display: inline-block; }
+          display: inline-block;
+          width: 365px; }
           section .mag .glap .smlimg ul li {
             float: left;
             height: 53px;
@@ -277,12 +278,12 @@ section {
             padding: 5px;
             margin: 0 3px;
             cursor: pointer;
-            border: solid 2px #fff; }
+            border: solid 1px #fff; }
             section .mag .glap .smlimg ul li img {
               width: 54px;
               height: 54px; }
           section .mag .glap .smlimg ul .listz {
-            border: solid 2px #CC0000; }
+            border: solid 1px #CC0000; }
     section .mag .xinxi {
       float: left;
       width: 528px;
@@ -358,7 +359,7 @@ section {
             color: #666; }
       section .mag .xinxi .xinxi-t {
         font-size: 12px; }
-        section .mag .xinxi .xinxi-t #btn {
+        section .mag .xinxi .xinxi-t #btm {
           width: 180px;
           height: 40px;
           color: #fff;
@@ -442,3 +443,40 @@ section {
         section .mag .mer p img {
           position: absolute;
           left: 25px; }
+
+#maimaimai {
+  width: 290px;
+  height: 90px;
+  border: solid 8px rgba(0, 0, 0, 0.7);
+  padding: 30px 20px;
+  background: #fff;
+  z-index: 10;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  display: none; }
+  #maimaimai i {
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: url(../img/lsp_bt2n.png) no-repeat 0 0; }
+  #maimaimai h3 {
+    margin-left: 50px;
+    font-size: 16px;
+    margin-bottom: 20px; }
+  #maimaimai p {
+    margin-left: 50px;
+    color: #666;
+    margin-bottom: 20px; }
+  #maimaimai a {
+    margin-left: 50px;
+    color: #ca1728; }
+  #maimaimai a:nth-of-type(2) {
+    padding: 3px 10px;
+    background: #ca1728;
+    color: #fff;
+    border-radius: 4px; }

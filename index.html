@@ -36,7 +36,7 @@
 						<a href=""><span>CEO邮箱</span></a>
 					</li>
 					<li>
-						<a href=""><i  style="background: url(../11/jiuxian/img/grther1.png) no-repeat -18px 0;"></i>购物车0件</a>
+						<a href=""><i  style="background: url(../11/jiuxian/img/grther1.png) no-repeat -18px 0;"></i>购物车<span class="num"></span>件</a>
 					</li>
 					<li>
 						<a href=""><span>CLUB会员</span></a>
@@ -758,14 +758,9 @@
 				</div>
 				<div class="smlban">
 					<a href="" style="background: url(img/smlban1.png);"></a>
-					<a href="" style="background: url(img/smlban2.png);"></a>
-					<p><span class="sml-span"></span><span></span></p>
 				</div>
 				<div class="smlban1">
 					<a href="" style="background: url(img/smlban1.jpg);"></a>
-					<a href="" style="background: url(img/smlban2.jpg);"></a>
-					<a href="" style="background: url(img/smlban3.jpg);"></a>
-					<p><span class="sml-span"></span><span></span><span></span></p>
 				</div>
 				<div class="shuang11">
 					<a href="" style="background: url(img/11huodong1.png) no-repeat center;"></a>
@@ -894,12 +889,12 @@
 				</div>
 				<div class="one-cont two-cont">
 					<div class="one-ban">
-						<div>
+						<div class="two-ban">
 							<a href="" style="background: url(img/one/ban6.jpg);display: block;"></a>
 							<a href="" style="background: url(img/one/ban7.jpg)"></a>
 						</div>
-						<p class='one-p'>
-							<span class="one-span"></span>
+						<p class='two-p'>
+							<span class="two-span"></span>
 							<span></span>
 						</p>
 					</div>
@@ -961,12 +956,12 @@
 				</div>
 				<div class="one-cont three-cont">
 					<div class="three-ban">
-						<div>
+						<div class="three-ban1">
 							<a href="" style="background: url(img/one/ban8.jpg);"></a>
 							<a href="" style="background: url(img/one/ban9.jpg)"></a>
 						</div>
-						<p class='one-p'>
-							<span class="one-span"></span>
+						<p class='three-ban'>
+							<span class="three-span"></span>
 							<span></span>
 						</p>
 					</div>
@@ -1008,12 +1003,12 @@
 				</div>
 				<div class="one-cont four-cont">
 					<div class="four-ban">
-						<div>
+						<div class="four-ban1">
 							<a href="" style="background: url(img/one/ban13.jpg);"></a>
 							<a href="" style="background: url(img/one/ban10.jpg)"></a>
 						</div>
-						<p class='one-p'>
-							<span class="one-span"></span>
+						<p class='four-p'>
+							<span class="four-span"></span>
 							<span></span>
 						</p>
 					</div>
@@ -1037,12 +1032,12 @@
 				</div>
 				<div class="one-cont five-cont">
 					<div class="four-ban">
-						<div>
+						<div class="five-ban">
 							<a href="" style="background: url(img/one/ban11.jpg);"></a>
 							<a href="" style="background: url(img/one/ban12.jpg)"></a>
 						</div>
-						<p class='one-p'>
-							<span class="one-span"></span>
+						<p class='five-p'>
+							<span class="five-span"></span>
 							<span></span>
 						</p>
 					</div>
@@ -1376,20 +1371,24 @@
 				</div>
 			</div>
 		</div>
-		<div id="cat">
+		
+			<div id="cat">
 			<div class="top">
 				<h3>购物车</h3>
 				<span></span>
 			</div>
 			<div class="mid">
-				<p><i></i></p>
-				<p>您还未选中要购买的商品，<br />
+				<p class="bumai"><i></i></p>
+				<p class="bumai">您还未选中要购买的商品，<br />
 					快去挑选吧~</p>
+				<ul>
+					
+				</ul>
 			</div>
 			<div class="btm">
 				<div class="btm1">
-					<p><span>0</span>件商品</p>
-					<i>0</i>
+					<p><span class="num">0</span>件商品</p>
+					<i class="mny">¥0</i>
 				</div>
 				<div class="btm2">
 				<input type="button" value="去购物车结算" />
@@ -1398,7 +1397,7 @@
 		</div>
 		
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 
 	</body>

@@ -345,9 +345,11 @@ section {
       }
       .payr{
           float: right;
-          width: 300px;
+          width: 330px;
           span{
+              display: block;
               margin: 0 10px;
+              float: left;
           }
           .num{
               color: #CC0001;

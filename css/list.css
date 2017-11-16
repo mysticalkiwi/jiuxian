@@ -28,7 +28,9 @@ nav {
           width: 190px; }
       nav .warp-top .classify > div {
         display: none;
-        top: 470px;
+        z-index: 4;
+        position: absolute;
+        float: left;
         height: 58px;
         width: 170px;
         font-size: 12px;
@@ -66,7 +68,7 @@ nav {
           width: 775px;
           height: 470px;
           position: absolute;
-          top: 34px;
+          top: 0;
           left: 190px;
           background: #fff;
           display: none; }

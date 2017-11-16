@@ -284,9 +284,11 @@ section {
           text-decoration: underline; }
     section .pay .payr {
       float: right;
-      width: 300px; }
+      width: 330px; }
       section .pay .payr span {
-        margin: 0 10px; }
+        display: block;
+        margin: 0 10px;
+        float: left; }
       section .pay .payr .num {
         color: #CC0001;
         font-size: 16px; }
