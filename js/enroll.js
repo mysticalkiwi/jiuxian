@@ -62,9 +62,18 @@ var str = '';
 						}
 					})
 					$('.btn').eq(0).click(function(){
-						console.log(sta)
 						if(sta && sta1 && sta2 && sta3){
-							location.href = 'index.html';
+							var user = $(".tel").val();
+							var psd  = $(".pad").val();
+							
+							var strCookie = JSON.stringify(user);
+							var strCookie1 = JSON.stringify(psd);
+							
+							setCookie("user",strCookie,7);
+							setCookie("psd",strCookie1,7);
+							alert("注册成功,即将跳转")
+							location.href = "index.html?userid="+user;
+							
 						}else{
 							alert("输入正确信息")
 						}

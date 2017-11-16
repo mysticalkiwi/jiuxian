@@ -368,6 +368,27 @@ header {
         border: solid 3px #cc0000;
         box-sizing: border-box;
         text-indent: 5px; }
+      #search .search-warp .fom #result {
+        position: absolute;
+        width: 450px;
+        height: auto;
+        overflow: hidden;
+        border: solid 1px #666;
+        background: #fff;
+        z-index: 99;
+        display: none; }
+        #search .search-warp .fom #result li {
+          height: 37px;
+          border-bottom: dashed  1px #999;
+          line-height: 38px;
+          text-indent: 10px;
+          font-size: 12px;
+          cursor: pointer; }
+          #search .search-warp .fom #result li:hover {
+            background: pink; }
+          #search .search-warp .fom #result li span {
+            float: right;
+            margin-right: 10px; }
       #search .search-warp .fom #btn {
         width: 85px;
         height: 32px;

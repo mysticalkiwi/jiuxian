@@ -43,10 +43,10 @@
 							<em>
 								<i style="background: url(img/regLogin-8.png) no-repeat -51px 0;"></i>
 							</em>
-							<input type="text" class="usertxt" placeholder="用户名/邮箱/手机号" /><b></b>
+							<input type="text" class="usertxt" placeholder="请输入用户名/手机号/邮箱" /><b></b>
 						</div>
 						<div>
-							<em><i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i></em><input type="password" class="userpad" placeholder="密码" /><b></b>
+							<em><i style="background: url(img/regLogin-8.png) no-repeat -80px 0;"></i></em><input type="password" class="userpad" placeholder="请输入密码" /><b></b>
 						</div>
 						<div>
 							<em><i style="background: url(img/regLogin-8.png) no-repeat -423px 0;"></i></em><input type="text" class="useryz" placeholder="验证码" /><a href='' id="yzm"></a><b></b>
@@ -113,31 +113,10 @@
 			<span>购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</span>
 		</footer>
 			
-			
+			<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 			<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
-			<script type="text/javascript">
-				$.get('json/user.php',function(data){
-				data = JSON.parse(data);
-				
-				$('.userbtn').click(function(){
-					console.log(str)
-					if($('.useryz').val() == str){
-						for (var i in data){
-							if($('.usertxt').val() == data[i].user){
-								if($('.userpad').val() == data[i].psd){
-									location.href = "index.html"
-								}else{
-									$('.err').show().html("账号或密码错误")
-								}
-							}
-						}
-					}else{
-						$('.err').show().html("验证码错误")
-					}
-				})
-			})
-			</script>
+			
 	</body>
 
 </html>

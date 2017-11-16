@@ -14,7 +14,7 @@ var str = '';
 var atr = '';
 var aaa = '';
 var data1 = {};
-var num = 0 ;
+var num = 0;
 var money = 0;
 var tims = null;
 var o = 1;
@@ -22,6 +22,11 @@ var oq = 1;
 var ow = 1;
 var oe = 1;
 var or = 1;
+
+if($(".dlh")){
+	var dlh = $(".dlh").val();
+}
+
 
 function move(banner, banner2, spanname) {
 	$(banner).find('li').eq(index).fadeIn(1000).siblings().fadeOut(1000);
@@ -31,58 +36,60 @@ function move(banner, banner2, spanname) {
 		index = 0;
 	}
 }
+
 function move5(banner, banner2, spanname) {
 	$(banner).find('a').eq(oq).fadeIn(1000).siblings().fadeOut(1000);
 	$(banner2).find('span').eq(oq).addClass(spanname).siblings().removeClass(spanname);
 	oq++;
 	if(oq == $(banner).children().length) {
 		oq = 0
-	}	
+	}
 }
+
 function move6(banner, banner2, spanname) {
 	$(banner).find('a').eq(ow).fadeIn(1000).siblings().fadeOut(1000);
 	$(banner2).find('span').eq(ow).addClass(spanname).siblings().removeClass(spanname);
 	ow++;
 	if(ow == $(banner).children().length) {
 		ow = 0
-	}	
+	}
 }
+
 function move7(banner, banner2, spanname) {
 	$(banner).find('a').eq(oe).fadeIn(1000).siblings().fadeOut(1000);
 	$(banner2).find('span').eq(oe).addClass(spanname).siblings().removeClass(spanname);
 	oe++;
 	if(oe == $(banner).children().length) {
 		oe = 0
-	}	
+	}
 }
+
 function move8(banner, banner2, spanname) {
 	$(banner).find('a').eq(o).fadeIn(1000).siblings().fadeOut(1000);
 	$(banner2).find('span').eq(o).addClass(spanname).siblings().removeClass(spanname);
 	o++;
-	console.log(o)
+
 	if(o == $(banner).children().length) {
 		o = 0
-	}	
+	}
 }
+
 function move9(banner, banner2, spanname) {
 	$(banner).find('a').eq(or).fadeIn(1000).siblings().fadeOut(1000);
 	$(banner2).find('span').eq(or).addClass(spanname).siblings().removeClass(spanname);
 	or++;
 	if(or == $(banner).children().length) {
 		or = 0
-	}	
+	}
 }
 
-
-tims = setInterval(function(){
-	move5(".ban-bj",".one-p","one-span")	
-	move6(".two-ban",".two-p","two-span")	
-	move7(".three-ban1",".three-ban","three-span")	
-	move8(".four-ban1",".four-p","four-span")	
-	move9(".five-ban",".five-p","five-span")	
-},2000)
-
-
+tims = setInterval(function() {
+	move5(".ban-bj", ".one-p", "one-span")
+	move6(".two-ban", ".two-p", "two-span")
+	move7(".three-ban1", ".three-ban", "three-span")
+	move8(".four-ban1", ".four-p", "four-span")
+	move9(".five-ban", ".five-p", "five-span")
+}, 2000)
 
 function clearT(banner) {
 	banner.onmouseover = function() {
@@ -119,8 +126,8 @@ addT(ban, ban_p, "ban-span");
 spanC(ban, ban_p, "ban-span");
 
 $.get("json/json.json", function(data) {
-    data1 = data;
-    
+	data1 = data;
+
 	for(var i in data) {
 		str += `<li><a href=details.html?id=${i}><img src = ${data[i].src}><p>${data[i].cap}</p></a><span>￥${data[i].money}</span></li>`;
 		atr += `<li><a href=details.html?id=${i}><img src="${data[i].src}"/></a><a href=""><p>${data[i].cap}</p></a><span>￥${data[i].money}</span></li>`
@@ -131,30 +138,31 @@ $.get("json/json.json", function(data) {
 	$('.btn-list').html(atr);
 
 	if(getCookie("cart")) {
-			var objCookie = JSON.parse(getCookie("cart"));
-		} else {
-			var objCookie = {};
-		}
-		for(var i in objCookie) {
-			var obj = data1[i];
-			aaa += `<li><img src = ${obj.src} data=${i}><a href=details.html?id=${i}>¥${obj.cap}.00</a><span>${objCookie[i]}</span><i>¥${obj.money}</i><b dataid=${i} ></b></li>`
-			num += objCookie[i];
-			money += objCookie[i] * obj.money;
-		}
+		var objCookie = JSON.parse(getCookie("cart"));
+	} else {
+		var objCookie = {};
+	}
+	for(var i in objCookie) {
+		var obj = data1[i];
+		aaa += `<li><img src = ${obj.src} data=${i}><a href=details.html?id=${i}>¥${obj.cap}.00</a><span>${objCookie[i]}</span><i>¥${obj.money}</i><b dataid=${i} ></b></li>`
+		num += objCookie[i];
+		money += objCookie[i] * obj.money;
+	}
 	$("#cat").find('ul').html(aaa);
-	
+
 	$(".num").html(num);
-	$(".mny").html("¥"+money)
+	$(".mny").html("¥" + money)
 	$('#cat').on("click", "b", function() {
 		$(this).parent().remove();
 		var id = this.getAttribute("dataid");
 		delete objCookie[id];
 		var strCookie = JSON.stringify(objCookie);
 		setCookie("cart", strCookie, 7);
+	})
 })
-})
+
 function move2() {
-	
+
 	for(var i = 0; i < $('figure').eq(0).find('div').size(); i++) {
 		$('figure').eq(0).find('div').eq(i).css("left", i * 1200);
 	}
@@ -276,7 +284,7 @@ function sus() {
 	} else {
 		$('#sus').hide()
 	}
-	
+
 }
 document.onscroll = sus;
 
@@ -307,5 +315,44 @@ $("#cat").on("click", "ul", function() {
 		$(this).siblings().show().parent().css("padding-top", 40)
 	}
 })
+var reg = /userid=\w*/
+var user = location.search;
+var user1 = reg.exec(user);
+if(user1){
+	var user2 = user1[0];
+	var id = user2.substring(7);
+}
+if(id) {
+	$(".dlh").html(id).show().siblings(".dlq").hide()
+}
 
+$("#txt").bind("input propertychange", function() {
+	var value = $(this).val();
+	var oscript = document.createElement('script');
+	oscript.src = 'http://list.jiuxian.com/assKeyWords.htm?t=1510062670369&callback=foo&wd='+value+'&area=11&searchUserKey=5f64e053-e74a-12b5-aeae-7e797e38ec2d&randomTest=0.9892812156917552&_=1510062486730';
+	document.body.appendChild(oscript);
+	document.body.removeChild(oscript);
+	return false
+})
 
+$("#btn").click(function() {
+	let value = $("#txt").val();
+	location.href = 'http://list.jiuxian.com/search.htm?key=' + value;
+})
+
+function foo(data) {
+	var sli = '';
+	var data = data.resultList;
+	for(var i = 0; i <= Math.min(7, data.length); i++) {
+		sli += `<li><b title=${data[i].word}>${data[i].word}</b><span>约<i>${data[i].count}</i>件商品</span></li>`
+	}
+	$("#result").html(sli).show();
+	
+	$("#result").on("click","li",function(){
+		let val = $(this).find('b').attr("title");
+		location.href = 'http://list.jiuxian.com/search.htm?key=' + val;
+	})
+	document.onclick = function(){
+		$("#result").hide();
+	}
+}

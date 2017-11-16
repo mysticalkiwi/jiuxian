@@ -69,3 +69,39 @@ for(var i = 0; i < 4; i++) {
 	str += arr[num];
 }
 
+
+
+
+
+	if(getCookie("user")){
+		var userid = JSON.parse(getCookie("user"));
+	}
+	if(getCookie("psd")){
+		var userpad = JSON.parse(getCookie("psd"));
+	}
+
+	$.get('json/user.php',function(data){
+				data = JSON.parse(data);
+				$('.userbtn').click(function(){
+					if($('.useryz').val() == str){
+						for (var i in data){
+							if($('.usertxt').val() == data[i].user){
+								if($('.userpad').val() == data[i].psd){
+									location.href = "index.html?userid="+$(".usertxt").val();
+								}else{
+									$('.err').show().html("账号或密码错误")
+								}
+							}
+							if($('.usertxt').val() == userid){
+								if($('.userpad').val() == userpad){
+									location.href = "index.html?userid="+$(".usertxt").val();
+								}else{
+									$('.err').show().html("账号或密码错误")
+								}
+							}
+						}
+					}else{
+						$('.err').show().html("验证码错误")
+					}
+				})
+			})

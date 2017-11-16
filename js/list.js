@@ -117,11 +117,10 @@ $('#cat').on("mouseleave", 'li', function() {
 $('#cat').on("click", "b", function() {
 	$(this).parent().remove();
 	var id = this.getAttribute("dataid");
+	
 	total -= objCookie[id];
 	money -= data1[id].money * objCookie[id];
-
 	delete objCookie[id];
-
 	$(".num").html(total)
 	$(".mny").html("¥" + money)
 	var strCookie = JSON.stringify(objCookie);
@@ -152,3 +151,48 @@ $('.classify').mouseover(function() {
 $(".classify").mouseout(function() {
 	$(this).find("#nav").siblings().hide()
 })
+
+
+var reg = /userid=\w*/
+var user = location.search;
+var user1 = reg.exec(user);
+if(user1){
+	var user2 = user1[0];
+	var id = user2.substring(7);
+}
+
+if(id){
+	$(".dlh").html(id).show().siblings(".dlq").hide()
+}
+
+
+$("#txt").bind("input propertychange", function() {
+	var value = $(this).val();
+	var oscript = document.createElement('script');
+	oscript.src = 'http://list.jiuxian.com/assKeyWords.htm?t=1510062670369&callback=foo&wd='+value+'&area=11&searchUserKey=5f64e053-e74a-12b5-aeae-7e797e38ec2d&randomTest=0.9892812156917552&_=1510062486730';
+	document.body.appendChild(oscript);
+	document.body.removeChild(oscript);
+	return false
+})
+
+$("#btn").click(function() {
+	let value = $("#txt").val();
+	location.href = 'http://list.jiuxian.com/search.htm?key=' + value;
+})
+
+function foo(data) {
+	var sli = '';
+	var data = data.resultList;
+	for(var i = 0; i <= Math.min(7, data.length); i++) {
+		sli += `<li><b title=${data[i].word}>${data[i].word}</b><span>约<i>${data[i].count}</i>件商品</span></li>`
+	}
+	$("#result").html(sli).show();
+	
+	$("#result").on("click","li",function(){
+		let val = $(this).find('b').attr("title");
+		location.href = 'http://list.jiuxian.com/search.htm?key=' + val;
+	})
+	document.onclick = function(){
+		$("#result").hide();
+	}
+}
